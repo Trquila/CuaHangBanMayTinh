@@ -1,0 +1,315 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\PC Market\\pc-market\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D744F01B-1964-42CC-894B-68E8F387A33C}|pc-market.csproj|C:\\PC Market\\pc-market\\classes\\functions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D744F01B-1964-42CC-894B-68E8F387A33C}|pc-market.csproj|solutionrelative:classes\\functions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D744F01B-1964-42CC-894B-68E8F387A33C}|pc-market.csproj|c:\\pc market\\pc-market\\forms\\form_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D744F01B-1964-42CC-894B-68E8F387A33C}|pc-market.csproj|solutionrelative:forms\\form_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D744F01B-1964-42CC-894B-68E8F387A33C}|pc-market.csproj|C:\\PC Market\\pc-market\\forms\\form_mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D744F01B-1964-42CC-894B-68E8F387A33C}|pc-market.csproj|solutionrelative:forms\\form_mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D744F01B-1964-42CC-894B-68E8F387A33C}|pc-market.csproj|C:\\PC Market\\pc-market\\forms\\form_baocaoban.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D744F01B-1964-42CC-894B-68E8F387A33C}|pc-market.csproj|solutionrelative:forms\\form_baocaoban.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D744F01B-1964-42CC-894B-68E8F387A33C}|pc-market.csproj|c:\\pc market\\pc-market\\forms\\form_doanhthu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D744F01B-1964-42CC-894B-68E8F387A33C}|pc-market.csproj|solutionrelative:forms\\form_doanhthu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D744F01B-1964-42CC-894B-68E8F387A33C}|pc-market.csproj|C:\\PC Market\\pc-market\\forms\\form_datastorage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D744F01B-1964-42CC-894B-68E8F387A33C}|pc-market.csproj|solutionrelative:forms\\form_datastorage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D744F01B-1964-42CC-894B-68E8F387A33C}|pc-market.csproj|C:\\PC Market\\pc-market\\forms\\form_cpu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D744F01B-1964-42CC-894B-68E8F387A33C}|pc-market.csproj|solutionrelative:forms\\form_cpu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D744F01B-1964-42CC-894B-68E8F387A33C}|pc-market.csproj|C:\\PC Market\\pc-market\\forms\\form_baocaonhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D744F01B-1964-42CC-894B-68E8F387A33C}|pc-market.csproj|solutionrelative:forms\\form_baocaonhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D744F01B-1964-42CC-894B-68E8F387A33C}|pc-market.csproj|C:\\PC Market\\pc-market\\forms\\form_searchhdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D744F01B-1964-42CC-894B-68E8F387A33C}|pc-market.csproj|solutionrelative:forms\\form_searchhdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D744F01B-1964-42CC-894B-68E8F387A33C}|pc-market.csproj|C:\\PC Market\\pc-market\\forms\\form_searchhdn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D744F01B-1964-42CC-894B-68E8F387A33C}|pc-market.csproj|solutionrelative:forms\\form_searchhdn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D744F01B-1964-42CC-894B-68E8F387A33C}|pc-market.csproj|C:\\PC Market\\pc-market\\forms\\form_datastorage.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D744F01B-1964-42CC-894B-68E8F387A33C}|pc-market.csproj|solutionrelative:forms\\form_datastorage.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D744F01B-1964-42CC-894B-68E8F387A33C}|pc-market.csproj|C:\\PC Market\\pc-market\\forms\\form_mainmenu.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D744F01B-1964-42CC-894B-68E8F387A33C}|pc-market.csproj|solutionrelative:forms\\form_mainmenu.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D744F01B-1964-42CC-894B-68E8F387A33C}|pc-market.csproj|C:\\PC Market\\pc-market\\forms\\form_mainmenu.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{D744F01B-1964-42CC-894B-68E8F387A33C}|pc-market.csproj|solutionrelative:forms\\form_mainmenu.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D744F01B-1964-42CC-894B-68E8F387A33C}|pc-market.csproj|C:\\PC Market\\pc-market\\forms\\form_mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D744F01B-1964-42CC-894B-68E8F387A33C}|pc-market.csproj|solutionrelative:forms\\form_mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D744F01B-1964-42CC-894B-68E8F387A33C}|pc-market.csproj|C:\\PC Market\\pc-market\\forms\\form_hoadonban.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D744F01B-1964-42CC-894B-68E8F387A33C}|pc-market.csproj|solutionrelative:forms\\form_hoadonban.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D744F01B-1964-42CC-894B-68E8F387A33C}|pc-market.csproj|C:\\PC Market\\pc-market\\forms\\form_hoadonban.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D744F01B-1964-42CC-894B-68E8F387A33C}|pc-market.csproj|solutionrelative:forms\\form_hoadonban.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D744F01B-1964-42CC-894B-68E8F387A33C}|pc-market.csproj|C:\\PC Market\\pc-market\\forms\\form_searchhdn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D744F01B-1964-42CC-894B-68E8F387A33C}|pc-market.csproj|solutionrelative:forms\\form_searchhdn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D744F01B-1964-42CC-894B-68E8F387A33C}|pc-market.csproj|C:\\PC Market\\pc-market\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{D744F01B-1964-42CC-894B-68E8F387A33C}|pc-market.csproj|solutionrelative:app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form_Login.cs",
+              "DocumentMoniker": "C:\\PC Market\\pc-market\\Forms\\Form_Login.cs",
+              "RelativeDocumentMoniker": "Forms\\Form_Login.cs",
+              "ToolTip": "C:\\PC Market\\pc-market\\Forms\\Form_Login.cs",
+              "RelativeToolTip": "Forms\\Form_Login.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T10:12:08.992Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form_BaoCaoBan.cs [Design]",
+              "DocumentMoniker": "C:\\PC Market\\pc-market\\Forms\\Form_BaoCaoBan.cs",
+              "RelativeDocumentMoniker": "Forms\\Form_BaoCaoBan.cs",
+              "ToolTip": "C:\\PC Market\\pc-market\\Forms\\Form_BaoCaoBan.cs [Design]",
+              "RelativeToolTip": "Forms\\Form_BaoCaoBan.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T10:05:28.423Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Form_CPU.cs [Design]",
+              "DocumentMoniker": "C:\\PC Market\\pc-market\\Forms\\Form_CPU.cs",
+              "RelativeDocumentMoniker": "Forms\\Form_CPU.cs",
+              "ToolTip": "C:\\pc-market\\Forms\\Form_CPU.cs [Design]",
+              "RelativeToolTip": "..\\..\\pc-market\\Forms\\Form_CPU.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T09:59:15.036Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Functions.cs",
+              "DocumentMoniker": "C:\\PC Market\\pc-market\\Classes\\Functions.cs",
+              "RelativeDocumentMoniker": "Classes\\Functions.cs",
+              "ToolTip": "C:\\PC Market\\pc-market\\Classes\\Functions.cs",
+              "RelativeToolTip": "Classes\\Functions.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAkwBcAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T09:25:50.878Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Form_BaoCaoNhap.cs [Design]",
+              "DocumentMoniker": "C:\\PC Market\\pc-market\\Forms\\Form_BaoCaoNhap.cs",
+              "RelativeDocumentMoniker": "Forms\\Form_BaoCaoNhap.cs",
+              "ToolTip": "C:\\pc-market\\Forms\\Form_BaoCaoNhap.cs [Design]",
+              "RelativeToolTip": "..\\..\\pc-market\\Forms\\Form_BaoCaoNhap.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T10:05:28.98Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form_MainMenu.cs [Design]",
+              "DocumentMoniker": "C:\\PC Market\\pc-market\\Forms\\Form_MainMenu.cs",
+              "RelativeDocumentMoniker": "Forms\\Form_MainMenu.cs",
+              "ToolTip": "C:\\PC Market\\pc-market\\Forms\\Form_MainMenu.cs [Design]",
+              "RelativeToolTip": "Forms\\Form_MainMenu.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T09:14:27.101Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Form_DoanhThu.cs [Design]",
+              "DocumentMoniker": "C:\\PC Market\\pc-market\\Forms\\Form_DoanhThu.cs",
+              "RelativeDocumentMoniker": "Forms\\Form_DoanhThu.cs",
+              "ToolTip": "C:\\PC Market\\pc-market\\Forms\\Form_DoanhThu.cs [Design]",
+              "RelativeToolTip": "Forms\\Form_DoanhThu.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T10:05:31.37Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Form_DataStorage.cs [Design]",
+              "DocumentMoniker": "C:\\PC Market\\pc-market\\Forms\\Form_DataStorage.cs",
+              "RelativeDocumentMoniker": "Forms\\Form_DataStorage.cs",
+              "ToolTip": "C:\\pc-market\\Forms\\Form_DataStorage.cs [Design]",
+              "RelativeToolTip": "..\\..\\pc-market\\Forms\\Form_DataStorage.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T09:59:10.992Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Form_SearchHDN.cs [Design]",
+              "DocumentMoniker": "C:\\PC Market\\pc-market\\Forms\\Form_SearchHDN.cs",
+              "RelativeDocumentMoniker": "Forms\\Form_SearchHDN.cs",
+              "ToolTip": "C:\\pc-market\\Forms\\Form_SearchHDN.cs [Design]",
+              "RelativeToolTip": "..\\..\\pc-market\\Forms\\Form_SearchHDN.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T09:25:26.272Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Form_SearchHDB.cs [Design]",
+              "DocumentMoniker": "C:\\PC Market\\pc-market\\Forms\\Form_SearchHDB.cs",
+              "RelativeDocumentMoniker": "Forms\\Form_SearchHDB.cs",
+              "ToolTip": "C:\\pc-market\\Forms\\Form_SearchHDB.cs [Design]",
+              "RelativeToolTip": "..\\..\\pc-market\\Forms\\Form_SearchHDB.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T09:25:37.234Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Form_DataStorage.Designer.cs",
+              "DocumentMoniker": "C:\\PC Market\\pc-market\\Forms\\Form_DataStorage.Designer.cs",
+              "RelativeDocumentMoniker": "Forms\\Form_DataStorage.Designer.cs",
+              "ToolTip": "C:\\PC Market\\pc-market\\Forms\\Form_DataStorage.Designer.cs",
+              "RelativeToolTip": "Forms\\Form_DataStorage.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADABAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T09:55:36.666Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Form_MainMenu.Designer.cs",
+              "DocumentMoniker": "C:\\PC Market\\pc-market\\Forms\\Form_MainMenu.Designer.cs",
+              "RelativeDocumentMoniker": "Forms\\Form_MainMenu.Designer.cs",
+              "ToolTip": "C:\\PC Market\\pc-market\\Forms\\Form_MainMenu.Designer.cs",
+              "RelativeToolTip": "Forms\\Form_MainMenu.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T09:54:19.273Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Form_MainMenu.resx",
+              "DocumentMoniker": "C:\\PC Market\\pc-market\\Forms\\Form_MainMenu.resx",
+              "RelativeDocumentMoniker": "Forms\\Form_MainMenu.resx",
+              "ToolTip": "C:\\PC Market\\pc-market\\Forms\\Form_MainMenu.resx",
+              "RelativeToolTip": "Forms\\Form_MainMenu.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-10-30T09:55:15.033Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Form_HoaDonBan.cs",
+              "DocumentMoniker": "C:\\PC Market\\pc-market\\Forms\\Form_HoaDonBan.cs",
+              "RelativeDocumentMoniker": "Forms\\Form_HoaDonBan.cs",
+              "ToolTip": "C:\\PC Market\\pc-market\\Forms\\Form_HoaDonBan.cs",
+              "RelativeToolTip": "Forms\\Form_HoaDonBan.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T09:25:45.803Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Form_MainMenu.cs",
+              "DocumentMoniker": "C:\\PC Market\\pc-market\\Forms\\Form_MainMenu.cs",
+              "RelativeDocumentMoniker": "Forms\\Form_MainMenu.cs",
+              "ToolTip": "C:\\PC Market\\pc-market\\Forms\\Form_MainMenu.cs",
+              "RelativeToolTip": "Forms\\Form_MainMenu.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAowB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T09:14:31.953Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Form_HoaDonBan.cs [Design]",
+              "DocumentMoniker": "C:\\PC Market\\pc-market\\Forms\\Form_HoaDonBan.cs",
+              "RelativeDocumentMoniker": "Forms\\Form_HoaDonBan.cs",
+              "ToolTip": "C:\\pc-market\\Forms\\Form_HoaDonBan.cs [Design]",
+              "RelativeToolTip": "..\\..\\pc-market\\Forms\\Form_HoaDonBan.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T09:25:42.705Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Form_SearchHDN.cs",
+              "DocumentMoniker": "C:\\PC Market\\pc-market\\Forms\\Form_SearchHDN.cs",
+              "RelativeDocumentMoniker": "Forms\\Form_SearchHDN.cs",
+              "ToolTip": "C:\\PC Market\\pc-market\\Forms\\Form_SearchHDN.cs",
+              "RelativeToolTip": "Forms\\Form_SearchHDN.cs",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAiwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T09:25:30.64Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\PC Market\\pc-market\\App.config",
+              "RelativeDocumentMoniker": "App.config",
+              "ToolTip": "C:\\PC Market\\pc-market\\App.config",
+              "RelativeToolTip": "App.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-10-30T09:13:57.075Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

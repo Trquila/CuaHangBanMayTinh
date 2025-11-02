@@ -1,0 +1,128 @@
+﻿using System;
+using System.Windows.Forms;
+
+namespace pc_market {
+    public partial class Form_MainMenu : Form {
+        public Form_MainMenu() {
+            InitializeComponent();
+        }
+
+        public void AboutUs_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(
+                "Phần mềm quản lý cửa hàng máy tính PC Market\n\n" +
+                "• Thành viên:\n" +
+                "   + Lê Thanh Hải\n" +
+                "   + Phan Quốc Uy\n" +
+                "   + Nguyễn Quang Định\n" +
+                "• Môn học: Lập trình trực quan\n" +
+                "• Giảng viên hướng dẫn: [Điền tên giảng viên]\n" +
+                "• Trường Đại học Giao Thông Vận Tải\n" +
+                "Chào mừng đến với PC Market - nơi bạn có thể tìm và sở hữu những chiếc máy tính xịn xò nhất!"
+            );
+        }
+
+
+        public void Exit_Click(object sender, EventArgs e) {
+            DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn thoát?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes) {
+                Application.Exit();
+            }
+        }
+
+        public void Category_Mainboard_Click(object sender, EventArgs e) {
+            Forms.Form_Mainboard formMainboard = new Forms.Form_Mainboard();
+            formMainboard.Show();
+        }
+
+        public void Category_PC_Click(object sender, EventArgs e) {
+            Forms.Form_PC formPC = new Forms.Form_PC();
+            formPC.Show();
+        }
+
+        public void Category_GPU_Click(object sender, EventArgs e) {
+            Forms.Form_GPU formGPU = new Forms.Form_GPU();
+            formGPU.Show();
+        }
+
+        public void Category_Provider_Click(object sender, EventArgs e) {
+            Forms.Form_NCC formNCC = new Forms.Form_NCC();
+            formNCC.Show();
+        }
+
+        public void Category_Customer_Click(object sender, EventArgs e) {
+            Forms.Form_KhachHang formKhachHang = new Forms.Form_KhachHang();
+            formKhachHang.Show();
+        }
+
+        public void Category_RAM_Click(object sender, EventArgs e) {
+            Forms.Form_RAM formRAM = new Forms.Form_RAM();
+            formRAM.Show();
+        }
+
+        public void Category_DataStorage_Click(object sender, EventArgs e) {
+            Forms.Form_DataStorage formDataStorage = new Forms.Form_DataStorage();
+            formDataStorage.Show();
+        }
+
+        public void Category_CPU_Click(object sender, EventArgs e) {
+            Forms.Form_CPU formCPU = new Forms.Form_CPU();
+            formCPU.Show();
+        }
+
+        public void Category_Monitor_Click(object sender, EventArgs e) {
+            Forms.Form_Monitor formMonitor = new Forms.Form_Monitor();
+            formMonitor.Show();
+        }
+
+        public void Category_Employee_Click(object sender, EventArgs e) {
+            Forms.Form_NhanVien formNhanVien = new Forms.Form_NhanVien();
+            formNhanVien.Show();
+        }
+
+        public void Category_HSX_Click(object sender, EventArgs e) {
+            Forms.Form_HangSanXuat formHangSanXuat = new Forms.Form_HangSanXuat();
+            formHangSanXuat.Show();
+        }
+
+        public void Receipt_HDB_Click(object sender, EventArgs e) {
+            Forms.Form_HoaDonBan formHoaDonBan = new Forms.Form_HoaDonBan();
+            formHoaDonBan.Show();
+        }
+
+        public void Receipt_HDN_Click(object sender, EventArgs e) {
+            Forms.Form_HoaDonNhap formHoaDonNhap = new Forms.Form_HoaDonNhap();
+            formHoaDonNhap.Show();
+        }
+
+        public void Search_HDN_Click(object sender, EventArgs e) {
+            Forms.Form_SearchHDN formSearchHDN = new Forms.Form_SearchHDN();
+            formSearchHDN.Show();
+        }
+
+        private void Search_HDB_Click(object sender, EventArgs e) {
+            Forms.Form_SearchHDB formSearchHDB = new Forms.Form_SearchHDB();
+            formSearchHDB.Show();
+        }
+
+        private void Report_BCB_Click(object sender, EventArgs e) {
+            Forms.Form_BaoCaoBan formBaoCaoBan = new Forms.Form_BaoCaoBan();
+            formBaoCaoBan.Show();
+        }
+
+        private void Report_BCN_Click(object sender, EventArgs e) {
+            Forms.Form_BaoCaoNhap formBaoCaoNhap = new Forms.Form_BaoCaoNhap();
+            formBaoCaoNhap.Show();
+        }
+
+        private void Report_DoanhThu_Click(object sender, EventArgs e) {
+            Forms.Form_DoanhThu formDoanhThu = new Forms.Form_DoanhThu();
+            formDoanhThu.Show();
+        }
+
+        private void Form_MainMenu_Load(object sender, EventArgs e)
+        {
+
+        }
+    }
+}

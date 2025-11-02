@@ -1,0 +1,202 @@
+C:\pc-market\bin\Debug\pc_market.exe.config
+C:\pc-market\bin\Debug\pc_market.exe
+C:\pc-market\bin\Debug\pc_market.pdb
+C:\pc-market\bin\Debug\EPPlus.dll
+C:\pc-market\bin\Debug\EPPlus.Interfaces.dll
+C:\pc-market\bin\Debug\EPPlus.System.Drawing.dll
+C:\pc-market\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\pc-market\bin\Debug\Microsoft.CodeAnalysis.dll
+C:\pc-market\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\pc-market\bin\Debug\Microsoft.Extensions.Configuration.dll
+C:\pc-market\bin\Debug\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\pc-market\bin\Debug\Microsoft.Extensions.Configuration.Json.dll
+C:\pc-market\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\pc-market\bin\Debug\Microsoft.Extensions.FileProviders.Physical.dll
+C:\pc-market\bin\Debug\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\pc-market\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\pc-market\bin\Debug\Microsoft.IO.RecyclableMemoryStream.dll
+C:\pc-market\bin\Debug\Microsoft.Office.Interop.Excel.dll
+C:\pc-market\bin\Debug\System.Buffers.dll
+C:\pc-market\bin\Debug\System.Collections.Immutable.dll
+C:\pc-market\bin\Debug\System.ComponentModel.Annotations.dll
+C:\pc-market\bin\Debug\System.Memory.dll
+C:\pc-market\bin\Debug\System.Numerics.Vectors.dll
+C:\pc-market\bin\Debug\System.Reflection.Metadata.dll
+C:\pc-market\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\pc-market\bin\Debug\System.Security.Cryptography.Pkcs.dll
+C:\pc-market\bin\Debug\System.Text.Encoding.CodePages.dll
+C:\pc-market\bin\Debug\System.Text.Encodings.Web.dll
+C:\pc-market\bin\Debug\System.Text.Json.dll
+C:\pc-market\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\pc-market\bin\Debug\System.ValueTuple.dll
+C:\pc-market\bin\Debug\stdole.dll
+C:\pc-market\bin\Debug\EPPlus.xml
+C:\pc-market\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\pc-market\bin\Debug\Microsoft.CodeAnalysis.pdb
+C:\pc-market\bin\Debug\Microsoft.CodeAnalysis.xml
+C:\pc-market\bin\Debug\Microsoft.Extensions.Configuration.xml
+C:\pc-market\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\pc-market\bin\Debug\Microsoft.Extensions.Configuration.FileExtensions.xml
+C:\pc-market\bin\Debug\Microsoft.Extensions.Configuration.Json.xml
+C:\pc-market\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.xml
+C:\pc-market\bin\Debug\Microsoft.Extensions.FileProviders.Physical.xml
+C:\pc-market\bin\Debug\Microsoft.Extensions.FileSystemGlobbing.xml
+C:\pc-market\bin\Debug\Microsoft.Extensions.Primitives.xml
+C:\pc-market\bin\Debug\Microsoft.IO.RecyclableMemoryStream.xml
+C:\pc-market\bin\Debug\System.Buffers.xml
+C:\pc-market\bin\Debug\System.Collections.Immutable.xml
+C:\pc-market\bin\Debug\System.Memory.xml
+C:\pc-market\bin\Debug\System.Numerics.Vectors.xml
+C:\pc-market\bin\Debug\System.Reflection.Metadata.xml
+C:\pc-market\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\pc-market\bin\Debug\System.Security.Cryptography.Pkcs.xml
+C:\pc-market\bin\Debug\System.Text.Encoding.CodePages.xml
+C:\pc-market\bin\Debug\System.Text.Encodings.Web.xml
+C:\pc-market\bin\Debug\System.Text.Json.xml
+C:\pc-market\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\pc-market\bin\Debug\System.ValueTuple.xml
+C:\pc-market\bin\Debug\cs\Microsoft.CodeAnalysis.resources.dll
+C:\pc-market\bin\Debug\de\Microsoft.CodeAnalysis.resources.dll
+C:\pc-market\bin\Debug\es\Microsoft.CodeAnalysis.resources.dll
+C:\pc-market\bin\Debug\fr\Microsoft.CodeAnalysis.resources.dll
+C:\pc-market\bin\Debug\it\Microsoft.CodeAnalysis.resources.dll
+C:\pc-market\bin\Debug\ja\Microsoft.CodeAnalysis.resources.dll
+C:\pc-market\bin\Debug\ko\Microsoft.CodeAnalysis.resources.dll
+C:\pc-market\bin\Debug\pl\Microsoft.CodeAnalysis.resources.dll
+C:\pc-market\bin\Debug\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\pc-market\bin\Debug\ru\Microsoft.CodeAnalysis.resources.dll
+C:\pc-market\bin\Debug\tr\Microsoft.CodeAnalysis.resources.dll
+C:\pc-market\bin\Debug\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\pc-market\bin\Debug\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\pc-market\obj\Debug\pc-market.csproj.AssemblyReference.cache
+C:\pc-market\obj\Debug\pc_market.Forms.Form_DoanhThu.resources
+C:\pc-market\obj\Debug\pc_market.Forms.Form_BaoCaoBan.resources
+C:\pc-market\obj\Debug\pc_market.Forms.Form_BaoCaoNhap.resources
+C:\pc-market\obj\Debug\pc_market.Forms.Form_CPU.resources
+C:\pc-market\obj\Debug\pc_market.Forms.Form_DataStorage.resources
+C:\pc-market\obj\Debug\pc_market.Forms.Form_HangSanXuat.resources
+C:\pc-market\obj\Debug\pc_market.Forms.Form_HoaDonNhap.resources
+C:\pc-market\obj\Debug\pc_market.Forms.Form_KhachHang.resources
+C:\pc-market\obj\Debug\pc_market.Forms.Form_Monitor.resources
+C:\pc-market\obj\Debug\pc_market.Forms.Form_NhanVien.resources
+C:\pc-market\obj\Debug\pc_market.Forms.Form_RAM.resources
+C:\pc-market\obj\Debug\pc_market.Forms.Form_Login.resources
+C:\pc-market\obj\Debug\pc_market.Form_MainMenu.resources
+C:\pc-market\obj\Debug\pc_market.Forms.Form_Mainboard.resources
+C:\pc-market\obj\Debug\pc_market.Forms.Form_PC.resources
+C:\pc-market\obj\Debug\pc_market.Forms.Form_GPU.resources
+C:\pc-market\obj\Debug\pc_market.Forms.Form_NCC.resources
+C:\pc-market\obj\Debug\pc_market.Forms.Form_HoaDonBan.resources
+C:\pc-market\obj\Debug\pc_market.Forms.Form_SearchHDB.resources
+C:\pc-market\obj\Debug\pc_market.Forms.Form_SearchHDN.resources
+C:\pc-market\obj\Debug\pc_market.Properties.Resources.resources
+C:\pc-market\obj\Debug\pc-market.csproj.GenerateResource.cache
+C:\pc-market\obj\Debug\pc-market.csproj.CoreCompileInputs.cache
+C:\pc-market\obj\Debug\pc-market.csproj.Up2Date
+C:\pc-market\obj\Debug\pc_market.exe
+C:\pc-market\obj\Debug\pc_market.pdb
+C:\pc-market\obj\Debug\pc_market.exe.config
+C:\PC Market\pc-market\bin\Debug\pc_market.exe.config
+C:\PC Market\pc-market\bin\Debug\pc_market.exe
+C:\PC Market\pc-market\bin\Debug\pc_market.pdb
+C:\PC Market\pc-market\bin\Debug\EPPlus.dll
+C:\PC Market\pc-market\bin\Debug\EPPlus.Interfaces.dll
+C:\PC Market\pc-market\bin\Debug\EPPlus.System.Drawing.dll
+C:\PC Market\pc-market\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\PC Market\pc-market\bin\Debug\Microsoft.Bcl.Cryptography.dll
+C:\PC Market\pc-market\bin\Debug\Microsoft.CodeAnalysis.dll
+C:\PC Market\pc-market\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\PC Market\pc-market\bin\Debug\Microsoft.Extensions.Configuration.dll
+C:\PC Market\pc-market\bin\Debug\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\PC Market\pc-market\bin\Debug\Microsoft.Extensions.Configuration.Json.dll
+C:\PC Market\pc-market\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\PC Market\pc-market\bin\Debug\Microsoft.Extensions.FileProviders.Physical.dll
+C:\PC Market\pc-market\bin\Debug\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\PC Market\pc-market\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\PC Market\pc-market\bin\Debug\Microsoft.IO.RecyclableMemoryStream.dll
+C:\PC Market\pc-market\bin\Debug\System.Buffers.dll
+C:\PC Market\pc-market\bin\Debug\System.Collections.Immutable.dll
+C:\PC Market\pc-market\bin\Debug\System.ComponentModel.Annotations.dll
+C:\PC Market\pc-market\bin\Debug\System.Formats.Asn1.dll
+C:\PC Market\pc-market\bin\Debug\System.IO.Pipelines.dll
+C:\PC Market\pc-market\bin\Debug\System.Memory.dll
+C:\PC Market\pc-market\bin\Debug\System.Numerics.Vectors.dll
+C:\PC Market\pc-market\bin\Debug\System.Reflection.Metadata.dll
+C:\PC Market\pc-market\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\PC Market\pc-market\bin\Debug\System.Security.Cryptography.Pkcs.dll
+C:\PC Market\pc-market\bin\Debug\System.Security.Cryptography.Xml.dll
+C:\PC Market\pc-market\bin\Debug\System.Text.Encoding.CodePages.dll
+C:\PC Market\pc-market\bin\Debug\System.Text.Encodings.Web.dll
+C:\PC Market\pc-market\bin\Debug\System.Text.Json.dll
+C:\PC Market\pc-market\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\PC Market\pc-market\bin\Debug\System.ValueTuple.dll
+C:\PC Market\pc-market\bin\Debug\EPPlus.xml
+C:\PC Market\pc-market\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\PC Market\pc-market\bin\Debug\Microsoft.Bcl.Cryptography.xml
+C:\PC Market\pc-market\bin\Debug\Microsoft.CodeAnalysis.pdb
+C:\PC Market\pc-market\bin\Debug\Microsoft.CodeAnalysis.xml
+C:\PC Market\pc-market\bin\Debug\Microsoft.Extensions.Configuration.xml
+C:\PC Market\pc-market\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\PC Market\pc-market\bin\Debug\Microsoft.Extensions.Configuration.FileExtensions.xml
+C:\PC Market\pc-market\bin\Debug\Microsoft.Extensions.Configuration.Json.xml
+C:\PC Market\pc-market\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.xml
+C:\PC Market\pc-market\bin\Debug\Microsoft.Extensions.FileProviders.Physical.xml
+C:\PC Market\pc-market\bin\Debug\Microsoft.Extensions.FileSystemGlobbing.xml
+C:\PC Market\pc-market\bin\Debug\Microsoft.Extensions.Primitives.xml
+C:\PC Market\pc-market\bin\Debug\Microsoft.IO.RecyclableMemoryStream.xml
+C:\PC Market\pc-market\bin\Debug\System.Buffers.xml
+C:\PC Market\pc-market\bin\Debug\System.Collections.Immutable.xml
+C:\PC Market\pc-market\bin\Debug\System.Formats.Asn1.xml
+C:\PC Market\pc-market\bin\Debug\System.IO.Pipelines.xml
+C:\PC Market\pc-market\bin\Debug\System.Memory.xml
+C:\PC Market\pc-market\bin\Debug\System.Numerics.Vectors.xml
+C:\PC Market\pc-market\bin\Debug\System.Reflection.Metadata.xml
+C:\PC Market\pc-market\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\PC Market\pc-market\bin\Debug\System.Security.Cryptography.Pkcs.xml
+C:\PC Market\pc-market\bin\Debug\System.Security.Cryptography.Xml.xml
+C:\PC Market\pc-market\bin\Debug\System.Text.Encoding.CodePages.xml
+C:\PC Market\pc-market\bin\Debug\System.Text.Encodings.Web.xml
+C:\PC Market\pc-market\bin\Debug\System.Text.Json.xml
+C:\PC Market\pc-market\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\PC Market\pc-market\bin\Debug\cs\Microsoft.CodeAnalysis.resources.dll
+C:\PC Market\pc-market\bin\Debug\de\Microsoft.CodeAnalysis.resources.dll
+C:\PC Market\pc-market\bin\Debug\es\Microsoft.CodeAnalysis.resources.dll
+C:\PC Market\pc-market\bin\Debug\fr\Microsoft.CodeAnalysis.resources.dll
+C:\PC Market\pc-market\bin\Debug\it\Microsoft.CodeAnalysis.resources.dll
+C:\PC Market\pc-market\bin\Debug\ja\Microsoft.CodeAnalysis.resources.dll
+C:\PC Market\pc-market\bin\Debug\ko\Microsoft.CodeAnalysis.resources.dll
+C:\PC Market\pc-market\bin\Debug\pl\Microsoft.CodeAnalysis.resources.dll
+C:\PC Market\pc-market\bin\Debug\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\PC Market\pc-market\bin\Debug\ru\Microsoft.CodeAnalysis.resources.dll
+C:\PC Market\pc-market\bin\Debug\tr\Microsoft.CodeAnalysis.resources.dll
+C:\PC Market\pc-market\bin\Debug\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\PC Market\pc-market\bin\Debug\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\PC Market\pc-market\obj\Debug\pc-market.csproj.AssemblyReference.cache
+C:\PC Market\pc-market\obj\Debug\pc-market.csproj.SuggestedBindingRedirects.cache
+C:\PC Market\pc-market\obj\Debug\pc_market.exe.config
+C:\PC Market\pc-market\obj\Debug\pc_market.Forms.Form_DoanhThu.resources
+C:\PC Market\pc-market\obj\Debug\pc_market.Forms.Form_BaoCaoBan.resources
+C:\PC Market\pc-market\obj\Debug\pc_market.Forms.Form_BaoCaoNhap.resources
+C:\PC Market\pc-market\obj\Debug\pc_market.Forms.Form_CPU.resources
+C:\PC Market\pc-market\obj\Debug\pc_market.Forms.Form_DataStorage.resources
+C:\PC Market\pc-market\obj\Debug\pc_market.Forms.Form_HangSanXuat.resources
+C:\PC Market\pc-market\obj\Debug\pc_market.Forms.Form_HoaDonNhap.resources
+C:\PC Market\pc-market\obj\Debug\pc_market.Forms.Form_KhachHang.resources
+C:\PC Market\pc-market\obj\Debug\pc_market.Forms.Form_Monitor.resources
+C:\PC Market\pc-market\obj\Debug\pc_market.Forms.Form_NhanVien.resources
+C:\PC Market\pc-market\obj\Debug\pc_market.Forms.Form_RAM.resources
+C:\PC Market\pc-market\obj\Debug\pc_market.Forms.Form_Login.resources
+C:\PC Market\pc-market\obj\Debug\pc_market.Form_MainMenu.resources
+C:\PC Market\pc-market\obj\Debug\pc_market.Forms.Form_Mainboard.resources
+C:\PC Market\pc-market\obj\Debug\pc_market.Forms.Form_PC.resources
+C:\PC Market\pc-market\obj\Debug\pc_market.Forms.Form_GPU.resources
+C:\PC Market\pc-market\obj\Debug\pc_market.Forms.Form_NCC.resources
+C:\PC Market\pc-market\obj\Debug\pc_market.Forms.Form_HoaDonBan.resources
+C:\PC Market\pc-market\obj\Debug\pc_market.Forms.Form_SearchHDB.resources
+C:\PC Market\pc-market\obj\Debug\pc_market.Forms.Form_SearchHDN.resources
+C:\PC Market\pc-market\obj\Debug\pc_market.Properties.Resources.resources
+C:\PC Market\pc-market\obj\Debug\pc-market.csproj.GenerateResource.cache
+C:\PC Market\pc-market\obj\Debug\pc-market.csproj.CoreCompileInputs.cache
+C:\PC Market\pc-market\obj\Debug\pc-market.csproj.Up2Date
+C:\PC Market\pc-market\obj\Debug\pc_market.exe
+C:\PC Market\pc-market\obj\Debug\pc_market.pdb
