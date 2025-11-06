@@ -8,8 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
-/*using OfficeOpenXml;
-using Excel = Microsoft.Office.Interop.Excel;*/
 
 namespace pc_market.Forms {
     public partial class Form_GPU : Form {
@@ -266,41 +264,6 @@ namespace pc_market.Forms {
             dgridGPU.AllowUserToAddRows = false;
             dgridGPU.EditMode = DataGridViewEditMode.EditProgrammatically;
         }
-
-        /*private void ExportExcel(string path) {
-            //Khởi tạo excel
-            Excel.Application application = new Excel.Application();
-            application.Application.Workbooks.Add(Type.Missing);
-            //Tạo cột excel
-            for (int i = 0; i < dgridGPU.Columns.Count; i++) {
-                application.Cells[1, i + 1] = dgridGPU.Columns[i].HeaderText;
-            }
-
-            for (int i = 0; i < dgridGPU.Rows.Count; i++) {
-                for (int j = 0; j < dgridGPU.Columns.Count; j++) {
-                    application.Cells[i + 2, j + 1] = dgridGPU.Rows[i].Cells[j].Value;
-                }
-            }
-
-            application.Columns.AutoFit();
-            application.ActiveWorkbook.SaveCopyAs(path);
-            application.ActiveWorkbook.Saved = true;
-        }
-
-        private void btnXuatexcel_Click(object sender, EventArgs e) {
-            SaveFileDialog saveFileDialog = new SaveFileDialog();
-            saveFileDialog.Title = "Export Excel";
-            saveFileDialog.Filter = "Excel (*.xlsx)|*.xlsx|Excel 2003 (*.xls)|*.xls";
-            if (saveFileDialog.ShowDialog() == DialogResult.OK) {
-                try {
-                    ExportExcel(saveFileDialog.FileName);
-                    MessageBox.Show("Xuat file thanh cong");
-                }
-                catch (Exception ex) {
-                    MessageBox.Show("Xuat file khong thanh cong\n" + ex.Message);
-                }
-            }
-        }*/
 
         private void btnDong_Click(object sender, EventArgs e) {
             this.Close();

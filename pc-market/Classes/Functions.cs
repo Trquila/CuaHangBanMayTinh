@@ -12,10 +12,6 @@ namespace pc_market.Classes {
 
         // Kết nối cơ sở dữ liệu
         public static void Connect() {
-            // connString for Windows Authentication (using Local SQL Server & SQL Server Management Studio)
-            // connString = "Server=localhost;Database=pc-market;Trusted_Connection=True;";
-
-            // connString for Docker SQL Server (change username & password if needed)
             connString = "Data Source=TEQUILLA;Integrated Security=True;Persist Security Info=False;Pooling=False;MultipleActiveResultSets=False;Connect Timeout=30;Encrypt=True;TrustServerCertificate=True;Packet Size=4096;Database = pc-market";
             conn = new SqlConnection(connString);
             try {

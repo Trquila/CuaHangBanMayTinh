@@ -45,6 +45,12 @@ namespace pc_market.Forms
             dataGridView.Columns[1].HeaderText = "Thông tin";
             dataGridView.Columns[0].Width = 100;
             dataGridView.Columns[1].Width = 600;
+            if (dataGridView.Columns.Count > 2)
+            {
+                dataGridView.Columns[2].HeaderText = "Đường dẫn ảnh";
+                dataGridView.Columns[2].Width = 300;
+            }
+
             dataGridView.AllowUserToAddRows = false;
             dataGridView.EditMode = DataGridViewEditMode.EditProgrammatically;
         }
@@ -79,8 +85,7 @@ namespace pc_market.Forms
         {
             if (btnThem.Enabled == false)
             {
-                MessageBox.Show("Đang ở chế độ thêm mới!", "Thông báo", MessageBoxButtons.OK,
-                    MessageBoxIcon.Information);
+                MessageBox.Show("Đang ở chế độ thêm mới!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 txtmaMH.Focus();
                 return;
             }
@@ -94,35 +99,53 @@ namespace pc_market.Forms
             txtmaMH.Text = dataGridView.CurrentRow.Cells["maMH"].Value.ToString();
             txtthongTin.Text = dataGridView.CurrentRow.Cells["thongTin"].Value.ToString();
 
+            // Hiển thị ảnh
+            if (dataGridView.CurrentRow.Cells["hinhAnh"].Value != DBNull.Value)
+            {
+                textBox7.Text = dataGridView.CurrentRow.Cells["hinhAnh"].Value.ToString();
+                if (System.IO.File.Exists(textBox7.Text))
+                    pictureBox1.Image = Image.FromFile(textBox7.Text);
+                else
+                    pictureBox1.Image = null;
+            }
+            else
+            {
+                textBox7.Text = "";
+                pictureBox1.Image = null;
+            }
+
             btnSua.Enabled = true;
             btnXoa.Enabled = true;
             btnBoqua.Enabled = true;
         }
 
 
+
         private void btnLuu_Click(object sender, EventArgs e)
         {
             string sql;
+
             if (txtmaMH.Text.Trim().Length == 0)
             {
-                MessageBox.Show("Bạn phải nhập mã màn hình", "Thông báo", MessageBoxButtons.OK,
-                    MessageBoxIcon.Information);
+                MessageBox.Show("Bạn phải nhập mã màn hình", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 txtmaMH.Focus();
                 return;
             }
 
             if (txtthongTin.Text.Trim().Length == 0)
             {
-                MessageBox.Show("Bạn phải nhập thông tin màn hình", "Thông báo", MessageBoxButtons.OK,
-                    MessageBoxIcon.Information);
+                MessageBox.Show("Bạn phải nhập thông tin màn hình", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 txtthongTin.Focus();
                 return;
             }
 
-            sql = "INSERT INTO manHinh(maMH,thongTin)VALUES(N'" + txtmaMH.Text + "',N'" + txtthongTin.Text + "')  ";
+            sql = "INSERT INTO manHinh(maMH, thongTin, hinhAnh) VALUES(N'"
+                  + txtmaMH.Text + "', N'" + txtthongTin.Text + "', N'" + textBox7.Text + "')";
+
             Classes.Functions.RunSQL(sql);
             DataGridView_Load();
             ResetValues();
+
             btnXoa.Enabled = true;
             btnThem.Enabled = true;
             btnSua.Enabled = true;
@@ -131,9 +154,12 @@ namespace pc_market.Forms
             txtmaMH.Enabled = false;
         }
 
+
+
         private void btnSua_Click(object sender, EventArgs e)
         {
             string sql;
+
             if (sontungmtp.Rows.Count == 0)
             {
                 MessageBox.Show("Không còn dữ liệu!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -142,8 +168,7 @@ namespace pc_market.Forms
 
             if (txtmaMH.Text == "")
             {
-                MessageBox.Show("Bạn chưa chọn bản ghi nào", "Thông báo", MessageBoxButtons.OK,
-                    MessageBoxIcon.Information);
+                MessageBox.Show("Bạn chưa chọn bản ghi nào", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
 
@@ -154,12 +179,32 @@ namespace pc_market.Forms
                 return;
             }
 
-            sql = "UPDATE manHinh SET thongTin=N'" + txtthongTin.Text + "' WHERE maMH=N'" + txtmaMH.Text + "'";
+            //Hỏi xác nhận người dùng
+            DialogResult result = MessageBox.Show(
+                "Bạn có muốn sửa thông tin màn hình này không?",
+                "Xác nhận sửa",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question
+            );
+
+            if (result == DialogResult.No)
+                return;
+
+            //Cập nhật dữ liệu
+            sql = "UPDATE manHinh SET thongTin=N'" + txtthongTin.Text +
+                  "', hinhAnh=N'" + textBox7.Text +
+                  "' WHERE maMH=N'" + txtmaMH.Text + "'";
+
             Classes.Functions.RunSQL(sql);
             DataGridView_Load();
             ResetValues();
+
+            MessageBox.Show("Đã sửa thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
             btnBoqua.Enabled = false;
         }
+
+
 
         private void btnHienthids_Click(object sender, EventArgs e)
         {
@@ -220,6 +265,18 @@ namespace pc_market.Forms
     private void btnDong_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog file = new OpenFileDialog();
+            file.Filter = "Image Files(*.jpg; *.jpeg; *.gif; *.bmp; *.png)|*.jpg; *.jpeg; *.gif; *.bmp; *.png";
+            file.Title = "Lựa chọn hình ảnh cho màn hình máy tính";
+            if (file.ShowDialog() == DialogResult.OK)
+            {
+                pictureBox1.Image = Image.FromFile(file.FileName);
+                textBox7.Text = file.FileName;
+            }
         }
     }
 }
