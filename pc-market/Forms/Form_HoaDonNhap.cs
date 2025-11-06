@@ -392,13 +392,13 @@ namespace pc_market.Forms {
             excelRange.Range["B1:B1"].ColumnWidth = 15;
             excelRange.Range["A1:B1"].MergeCells = true;
             excelRange.Range["A1:B1"].HorizontalAlignment = COMExcel.XlHAlign.xlHAlignCenter;
-            excelRange.Range["A1:B1"].Value = "Cửa hàng máy tính PC Market";
+            excelRange.Range["A1:B1"].Value = "Cửa hàng máy tính";
             excelRange.Range["A2:B2"].MergeCells = true;
             excelRange.Range["A2:B2"].HorizontalAlignment = COMExcel.XlHAlign.xlHAlignCenter;
-            excelRange.Range["A2:B2"].Value = "Số 12 Chùa Bộc, Đống Đa, Hà Nội";
+            excelRange.Range["A2:B2"].Value = "Số 3, Đường Cầu Giấy, Hà Nội";
             excelRange.Range["A3:B3"].MergeCells = true;
             excelRange.Range["A3:B3"].HorizontalAlignment = COMExcel.XlHAlign.xlHAlignCenter;
-            excelRange.Range["A3:B3"].Value = "Điện thoại: 0123456789";
+            excelRange.Range["A3:B3"].Value = "Điện thoại: Liên hệ qua fanpage của cửa hàng hoặc số điện thoại 113";
 
             excelRange.Range["C2:L2"].Font.Size = 16;
             excelRange.Range["C2:L2"].Font.Name = "Times New Roman";

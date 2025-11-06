@@ -358,6 +358,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\banner2.jpg" />
     <Content Include="Resources\add.png" />
     <Content Include="Resources\banner.jpg" />
     <Content Include="Resources\close.png" />

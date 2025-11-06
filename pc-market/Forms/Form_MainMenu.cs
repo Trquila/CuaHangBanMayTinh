@@ -7,6 +7,16 @@ namespace pc_market {
             InitializeComponent();
         }
 
+        private void Form_MainMenu_Load(object sender, EventArgs e)
+        {
+            PictureBox banner = new PictureBox();
+            banner.Image = Properties.Resources.banner2;  
+            banner.Dock = DockStyle.Fill;
+            banner.SizeMode = PictureBoxSizeMode.StretchImage;
+            this.Controls.Add(banner);
+            banner.SendToBack();
+        }
+
         public void AboutUs_Click(object sender, EventArgs e)
         {
             MessageBox.Show(
@@ -16,7 +26,7 @@ namespace pc_market {
                 "   + Phan Quốc Uy\n" +
                 "   + Nguyễn Quang Định\n" +
                 "• Môn học: Lập trình trực quan\n" +
-                "• Giảng viên hướng dẫn: [Điền tên giảng viên]\n" +
+                "• Giảng viên hướng dẫn: Nguyễn Thu Hường\n" +
                 "• Trường Đại học Giao Thông Vận Tải\n" +
                 "Chào mừng đến với PC Market - nơi bạn có thể tìm và sở hữu những chiếc máy tính xịn xò nhất!"
             );
@@ -118,11 +128,6 @@ namespace pc_market {
         private void Report_DoanhThu_Click(object sender, EventArgs e) {
             Forms.Form_DoanhThu formDoanhThu = new Forms.Form_DoanhThu();
             formDoanhThu.Show();
-        }
-
-        private void Form_MainMenu_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

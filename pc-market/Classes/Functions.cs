@@ -112,30 +112,7 @@ namespace pc_market.Classes {
             comboBox.DisplayMember = name; // Trường hiển thị
         }
 
-        // Đổ dữ liệu vào combo box với định dạng mã + tên
-        /*public static void FillCombo1(string query, ComboBox comboBox, string value, string displayExpression)
-        {
-            // Create a SqlDataAdapter and DataTable
-            SqlDataAdapter data = new SqlDataAdapter(query, conn);
-            DataTable table = new DataTable();
-            data.Fill(table);
-
-            // Add a new "DisplayMember" column to the DataTable
-            table.Columns.Add("DisplayMember", typeof(string)).Expression = displayExpression;
-
-            // Bind the DataTable to the combobox
-            comboBox.DataSource = table;
-
-            // Set the ValueMember and DisplayMember properties
-            comboBox.ValueMember = value;
-            comboBox.DisplayMember = "DisplayMember";
-
-            // Set the selected index to -1
-            comboBox.SelectedIndex = -1;
-        }*/
-        // Hàm này tương tự như hàm FillCombo nhưng có thêm khả năng định dạng văn bản hiển thị trong combobox.
-
-        // Hàm kiểm tra dữ liệu nhập vào có phải là date không
+     
         public static bool IsDate(string date) {
             string[] parts = date.Split('/');
             if ((Convert.ToInt32(parts[0]) >= 1) && (Convert.ToInt32(parts[0]) <= 31) && (Convert.ToInt32(parts[1]) >= 1) && (Convert.ToInt32(parts[1]) <= 12) && (Convert.ToInt32(parts[2]) >= 1900))

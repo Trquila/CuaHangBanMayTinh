@@ -4,15 +4,19 @@ using System.Drawing;
 using System.Windows.Forms;
 using Microsoft.VisualBasic;
 
-namespace pc_market.Forms {
-    public partial class Form_PC : Form {
+namespace pc_market.Forms
+{
+    public partial class Form_PC : Form
+    {
         private DataTable table;
 
-        public Form_PC() {
+        public Form_PC()
+        {
             InitializeComponent();
         }
 
-        private void FormPC_Load(object sender, EventArgs e) {
+        private void FormPC_Load(object sender, EventArgs e)
+        {
             // Classes.Functions.Connect();
             textBox1.Enabled = false;
             textBox4.Enabled = false;
@@ -25,7 +29,8 @@ namespace pc_market.Forms {
             DataGridView_Load();
         }
 
-        private void DataGridView_Load() {
+        private void DataGridView_Load()
+        {
             string query = "SELECT mayTinh.maMay, mayTinh.tenMay, loaiMay.tenLoaiMay, mainboard.tenMainboard, CPU.tenCPU, ram.tenRam, GPU.tenGPU, oCung.tenOC, manHinh.thongTin, hangSanXuat.tenHSX, mayTinh.giaNhap, mayTinh.giaBan, mayTinh.soLuong, mayTinh.thoiGianBH, mayTinh.ghiChu " +
                            "FROM mayTinh " +
                            "LEFT JOIN loaiMay ON mayTinh.maLoaiMay = loaiMay.maLoaiMay " +
@@ -122,8 +127,10 @@ namespace pc_market.Forms {
             ResetValues();
         }
 
-        private void DataGridView_Click(object sender, EventArgs e) {
-            if (table.Rows.Count == 0) {
+        private void DataGridView_Click(object sender, EventArgs e)
+        {
+            if (table.Rows.Count == 0)
+            {
                 MessageBox.Show("Không có dữ liệu!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
@@ -152,7 +159,8 @@ namespace pc_market.Forms {
             button6.Enabled = true;
         }
 
-        private void ResetValues() {
+        private void ResetValues()
+        {
             textBox1.Text = "";
             textBox2.Text = "";
             textBox3.Text = "";
@@ -172,7 +180,8 @@ namespace pc_market.Forms {
             pictureBox1.Image = null;
         }
 
-        private void ButtonAdd_Click(object sender, EventArgs e) {
+        private void ButtonAdd_Click(object sender, EventArgs e)
+        {
             button1.Enabled = false;
             button2.Enabled = false;
             button3.Enabled = false;
@@ -186,38 +195,47 @@ namespace pc_market.Forms {
             textBox1.Focus();
         }
 
-        private void ButtonAddImage_Click(object sender, EventArgs e) {
+        private void ButtonAddImage_Click(object sender, EventArgs e)
+        {
             OpenFileDialog file = new OpenFileDialog();
             file.Filter = "Image Files(*.jpg; *.jpeg; *.gif; *.bmp; *.png)|*.jpg; *.jpeg; *.gif; *.bmp; *.png";
             file.Title = "Lựa chọn hình ảnh cho sản phẩm";
-            if (file.ShowDialog() == DialogResult.OK) {
+            if (file.ShowDialog() == DialogResult.OK)
+            {
                 pictureBox1.Image = Image.FromFile(file.FileName);
                 textBox7.Text = file.FileName;
             }
         }
 
-        private void ImportPrice_TextChanged(object sender, EventArgs e) {
-            try {
+        private void ImportPrice_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
                 long importPrice = long.Parse(textBox3.Text.Trim());
                 double exportPrice = importPrice * 1.3;
                 textBox4.Text = ((long)exportPrice).ToString();
             }
-            catch (FormatException) {
+            catch (FormatException)
+            {
                 textBox4.Text = "";
             }
         }
 
-        private void TypeComboBox_SelectedIndexChanged(object sender, EventArgs e) {
-            if (comboBox1.SelectedValue != null) {
+        private void TypeComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboBox1.SelectedValue != null)
+            {
                 string type = comboBox1.SelectedValue.ToString();
-                if (type == "LAP") {
+                if (type == "LAP")
+                {
                     comboBox2.SelectedIndex = -1;
                     comboBox2.Enabled = false;
 
                     comboBox7.Enabled = true;
                     comboBox8.Enabled = true;
                 }
-                else if (type == "PC") {
+                else if (type == "PC")
+                {
                     comboBox2.Enabled = true;
 
                     comboBox7.SelectedIndex = -1;
@@ -226,120 +244,142 @@ namespace pc_market.Forms {
                     comboBox8.Enabled = false;
                 }
             }
-            else {
+            else
+            {
                 comboBox2.Enabled = true;
                 comboBox7.Enabled = true;
                 comboBox8.Enabled = true;
             }
         }
 
-        private void ButtonSave_Click(object sender, EventArgs e) {
-            if (textBox1.Text.Trim().Length == 0) {
+        private void ButtonSave_Click(object sender, EventArgs e)
+        {
+            if (textBox1.Text.Trim().Length == 0)
+            {
                 MessageBox.Show("Bạn chưa nhập mã máy tính!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 textBox1.Focus();
                 return;
             }
 
-            if (textBox2.Text.Trim().Length == 0) {
+            if (textBox2.Text.Trim().Length == 0)
+            {
                 MessageBox.Show("Bạn chưa nhập tên máy tính!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 textBox2.Focus();
                 return;
             }
 
-            if (comboBox1.SelectedValue == null) {
+            if (comboBox1.SelectedValue == null)
+            {
                 MessageBox.Show("Bạn chưa chọn loại máy!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 comboBox1.Focus();
                 return;
             }
 
             string type = comboBox1.SelectedValue.ToString();
-            if (type == "LAP") {
-                if (comboBox3.SelectedValue == null) {
+            if (type == "LAP")
+            {
+                if (comboBox3.SelectedValue == null)
+                {
                     MessageBox.Show("Bạn chưa chọn CPU!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     comboBox3.Focus();
                     return;
                 }
 
-                if (comboBox4.SelectedValue == null) {
+                if (comboBox4.SelectedValue == null)
+                {
                     MessageBox.Show("Bạn chưa chọn RAM!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     comboBox4.Focus();
                     return;
                 }
 
-                if (comboBox5.SelectedValue == null) {
+                if (comboBox5.SelectedValue == null)
+                {
                     MessageBox.Show("Bạn chưa chọn card đồ họa!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     comboBox5.Focus();
                     return;
                 }
 
-                if (comboBox6.SelectedValue == null) {
+                if (comboBox6.SelectedValue == null)
+                {
                     MessageBox.Show("Bạn chưa chọn ổ cứng!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     comboBox6.Focus();
                     return;
                 }
 
-                if (comboBox7.SelectedValue == null) {
+                if (comboBox7.SelectedValue == null)
+                {
                     MessageBox.Show("Bạn chưa chọn thông tin màn hình!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     comboBox7.Focus();
                     return;
                 }
 
-                if (comboBox8.SelectedValue == null) {
+                if (comboBox8.SelectedValue == null)
+                {
                     MessageBox.Show("Bạn chưa chọn hãng sản xuất!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     comboBox8.Focus();
                     return;
                 }
 
-                if (textBox3.Text.Trim().Length == 0) {
+                if (textBox3.Text.Trim().Length == 0)
+                {
                     MessageBox.Show("Bạn chưa nhập giá nhập!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     textBox3.Focus();
                     return;
                 }
 
-                if (textBox5.Text.Trim().Length == 0) {
+                if (textBox5.Text.Trim().Length == 0)
+                {
                     MessageBox.Show("Bạn chưa nhập số lượng!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     textBox5.Focus();
                     return;
                 }
             }
-            else if (type == "PC") {
-                if (comboBox2.SelectedValue == null) {
+            else if (type == "PC")
+            {
+                if (comboBox2.SelectedValue == null)
+                {
                     MessageBox.Show("Bạn chưa chọn mainboard!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     comboBox2.Focus();
                     return;
                 }
 
-                if (comboBox3.SelectedValue == null) {
+                if (comboBox3.SelectedValue == null)
+                {
                     MessageBox.Show("Bạn chưa chọn CPU!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     comboBox3.Focus();
                     return;
                 }
 
-                if (comboBox4.SelectedValue == null) {
+                if (comboBox4.SelectedValue == null)
+                {
                     MessageBox.Show("Bạn chưa chọn RAM!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     comboBox4.Focus();
                     return;
                 }
 
-                if (comboBox5.SelectedValue == null) {
+                if (comboBox5.SelectedValue == null)
+                {
                     MessageBox.Show("Bạn chưa chọn card đồ họa!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     comboBox5.Focus();
                     return;
                 }
 
-                if (comboBox6.SelectedValue == null) {
+                if (comboBox6.SelectedValue == null)
+                {
                     MessageBox.Show("Bạn chưa chọn ổ cứng!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     comboBox6.Focus();
                     return;
                 }
 
-                if (textBox3.Text.Trim().Length == 0) {
+                if (textBox3.Text.Trim().Length == 0)
+                {
                     MessageBox.Show("Bạn chưa nhập giá nhập!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     textBox3.Focus();
                     return;
                 }
 
-                if (textBox5.Text.Trim().Length == 0) {
+                if (textBox5.Text.Trim().Length == 0)
+                {
                     MessageBox.Show("Bạn chưa nhập số lượng!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     textBox5.Focus();
                     return;
@@ -347,7 +387,8 @@ namespace pc_market.Forms {
             }
 
             string query = $"SELECT maMay FROM mayTinh WHERE maMay = N'{textBox1.Text.Trim()}'";
-            if (Classes.Functions.CheckID(query)) {
+            if (Classes.Functions.CheckID(query))
+            {
                 MessageBox.Show("Mã máy tính này đã tồn tại, vui lòng nhập lại!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 textBox1.Focus();
                 textBox1.Text = "";
@@ -373,18 +414,22 @@ namespace pc_market.Forms {
             textBox1.Enabled = false;
         }
 
-        private void ButtonDelete_Click(object sender, EventArgs e) {
-            if (table.Rows.Count == 0) {
+        private void ButtonDelete_Click(object sender, EventArgs e)
+        {
+            if (table.Rows.Count == 0)
+            {
                 MessageBox.Show("Không có dữ liệu!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            if (textBox1.Text == "") {
+            if (textBox1.Text == "")
+            {
                 MessageBox.Show("Bạn chưa chọn sản phẩm nào!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            if (MessageBox.Show("Bạn có chắc chắn muốn xóa sản phẩm này không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes) {
+            if (MessageBox.Show("Bạn có chắc chắn muốn xóa sản phẩm này không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
                 string query = $"DELETE FROM mayTinh WHERE maMay = N'{textBox1.Text.Trim()}'";
                 Classes.Functions.RunDeleteSQL(query);
                 DataGridView_Load();
@@ -400,124 +445,147 @@ namespace pc_market.Forms {
             }
         }
 
-        private void ButtonUpdate_Click(object sender, EventArgs e) {
-            if (table.Rows.Count == 0) {
+        private void ButtonUpdate_Click(object sender, EventArgs e)
+        {
+            if (table.Rows.Count == 0)
+            {
                 MessageBox.Show("Không có dữ liệu!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            if (textBox1.Text.Trim().Length == 0) {
+            if (textBox1.Text.Trim().Length == 0)
+            {
                 MessageBox.Show("Bạn chưa chọn sản phẩm nào!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            if (textBox2.Text.Trim().Length == 0) {
+            if (textBox2.Text.Trim().Length == 0)
+            {
                 MessageBox.Show("Bạn chưa nhập tên máy tính!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 textBox2.Focus();
                 return;
             }
 
-            if (comboBox1.SelectedValue == null) {
+            if (comboBox1.SelectedValue == null)
+            {
                 MessageBox.Show("Bạn chưa chọn loại máy!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 comboBox1.Focus();
                 return;
             }
 
             string type = comboBox1.SelectedValue.ToString();
-            if (type == "LAP") {
-                if (comboBox3.SelectedValue == null) {
+            if (type == "LAP")
+            {
+                if (comboBox3.SelectedValue == null)
+                {
                     MessageBox.Show("Bạn chưa chọn CPU!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     comboBox3.Focus();
                     return;
                 }
 
-                if (comboBox4.SelectedValue == null) {
+                if (comboBox4.SelectedValue == null)
+                {
                     MessageBox.Show("Bạn chưa chọn RAM!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     comboBox4.Focus();
                     return;
                 }
 
-                if (comboBox5.SelectedValue == null) {
+                if (comboBox5.SelectedValue == null)
+                {
                     MessageBox.Show("Bạn chưa chọn card đồ họa!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     comboBox5.Focus();
                     return;
                 }
 
-                if (comboBox6.SelectedValue == null) {
+                if (comboBox6.SelectedValue == null)
+                {
                     MessageBox.Show("Bạn chưa chọn ổ cứng!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     comboBox6.Focus();
                     return;
                 }
 
-                if (comboBox7.SelectedValue == null) {
+                if (comboBox7.SelectedValue == null)
+                {
                     MessageBox.Show("Bạn chưa chọn thông tin màn hình!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     comboBox7.Focus();
                     return;
                 }
 
-                if (comboBox8.SelectedValue == null) {
+                if (comboBox8.SelectedValue == null)
+                {
                     MessageBox.Show("Bạn chưa chọn hãng sản xuất!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     comboBox8.Focus();
                     return;
                 }
 
-                if (textBox3.Text.Trim().Length == 0) {
+                if (textBox3.Text.Trim().Length == 0)
+                {
                     MessageBox.Show("Bạn chưa nhập giá nhập!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     textBox3.Focus();
                     return;
                 }
 
-                if (textBox5.Text.Trim().Length == 0) {
+                if (textBox5.Text.Trim().Length == 0)
+                {
                     MessageBox.Show("Bạn chưa nhập số lượng!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     textBox5.Focus();
                     return;
                 }
             }
-            else if (type == "PC") {
-                if (comboBox2.SelectedValue == null) {
+            else if (type == "PC")
+            {
+                if (comboBox2.SelectedValue == null)
+                {
                     MessageBox.Show("Bạn chưa chọn mainboard!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     comboBox2.Focus();
                     return;
                 }
 
-                if (comboBox3.SelectedValue == null) {
+                if (comboBox3.SelectedValue == null)
+                {
                     MessageBox.Show("Bạn chưa chọn CPU!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     comboBox3.Focus();
                     return;
                 }
 
-                if (comboBox4.SelectedValue == null) {
+                if (comboBox4.SelectedValue == null)
+                {
                     MessageBox.Show("Bạn chưa chọn RAM!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     comboBox4.Focus();
                     return;
                 }
 
-                if (comboBox5.SelectedValue == null) {
+                if (comboBox5.SelectedValue == null)
+                {
                     MessageBox.Show("Bạn chưa chọn card đồ họa!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     comboBox5.Focus();
                     return;
                 }
 
-                if (comboBox6.SelectedValue == null) {
+                if (comboBox6.SelectedValue == null)
+                {
                     MessageBox.Show("Bạn chưa chọn ổ cứng!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     comboBox6.Focus();
                     return;
                 }
 
-                if (textBox3.Text.Trim().Length == 0) {
+                if (textBox3.Text.Trim().Length == 0)
+                {
                     MessageBox.Show("Bạn chưa nhập giá nhập!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     textBox3.Focus();
                     return;
                 }
 
-                if (textBox5.Text.Trim().Length == 0) {
+                if (textBox5.Text.Trim().Length == 0)
+                {
                     MessageBox.Show("Bạn chưa nhập số lượng!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     textBox5.Focus();
                     return;
                 }
             }
 
-            if (MessageBox.Show("Bạn có chắc chắn muốn sửa sản phẩm này không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes) {
+            if (MessageBox.Show("Bạn có chắc chắn muốn sửa sản phẩm này không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
                 string mainboardID = (comboBox2.SelectedValue != null) ? comboBox2.SelectedValue.ToString() : "NULL";
                 string monitorID = (comboBox7.SelectedValue != null) ? comboBox7.SelectedValue.ToString() : "NULL";
                 string manufacturerID = (comboBox8.SelectedValue != null) ? comboBox8.SelectedValue.ToString() : "NULL";
@@ -538,7 +606,8 @@ namespace pc_market.Forms {
             }
         }
 
-        private void ButtonReset_Click(object sender, EventArgs e) {
+        private void ButtonReset_Click(object sender, EventArgs e)
+        {
             ResetValues();
             DataGridView_Load();
 
@@ -552,14 +621,17 @@ namespace pc_market.Forms {
             textBox1.Enabled = false;
         }
 
-        private void ButtonSearch_Click(object sender, EventArgs e) {
+        private void ButtonSearch_Click(object sender, EventArgs e)
+        {
             string keyword = Interaction.InputBox("Nhập tên sản phẩm cần tìm", "Tìm kiếm");
 
-            if (keyword == "") {
+            if (keyword == "")
+            {
                 return;
             }
 
-            if (string.IsNullOrWhiteSpace(keyword)) {
+            if (string.IsNullOrWhiteSpace(keyword))
+            {
                 MessageBox.Show("Bạn chưa nhập tên mặt hàng!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
@@ -576,7 +648,8 @@ namespace pc_market.Forms {
                            "LEFT JOIN hangSanXuat ON mayTinh.maHSX = hangSanXuat.maHSX " +
                            $"WHERE tenMay LIKE N'%{keyword}%'";
             DataTable searchTable = Classes.Functions.GetDataToTable(query);
-            if (searchTable.Rows.Count > 0) {
+            if (searchTable.Rows.Count > 0)
+            {
                 dataGridView1.DataSource = searchTable;
                 dataGridView1.Columns[0].HeaderText = "Mã máy tính";
                 dataGridView1.Columns[1].HeaderText = "Tên máy tính";
@@ -615,12 +688,14 @@ namespace pc_market.Forms {
                 button7.Enabled = false;
                 button5.Enabled = true;
             }
-            else {
+            else
+            {
                 MessageBox.Show("Sản phẩm không tồn tại!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
-        private void Validate_KeyPress(object sender, KeyPressEventArgs e) {
+        private void Validate_KeyPress(object sender, KeyPressEventArgs e)
+        {
             if ((e.KeyChar >= '0' && e.KeyChar <= '9') || e.KeyChar == (char)Keys.Back)
                 e.Handled = false;
             else
