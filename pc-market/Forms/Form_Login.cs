@@ -47,7 +47,7 @@ namespace pc_market.Forms
             {
                 MessageBox.Show("Đăng nhập thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                Form_MainMenu mainMenu = new Form_MainMenu();
+                Form_Menu mainMenu = new Form_Menu();
                 this.Hide();
                 mainMenu.Show();
             }

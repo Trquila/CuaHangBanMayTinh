@@ -88,6 +88,9 @@
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="mscorlib" />
     <Reference Include="PresentationCore" />
+    <Reference Include="ReaLTaiizor, Version=3.8.1.3, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\ReaLTaiizor.3.8.1.3\lib\net48\ReaLTaiizor.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Buffers, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>packages\System.Buffers.4.6.1\lib\net462\System.Buffers.dll</HintPath>
@@ -101,6 +104,7 @@
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
     <Reference Include="System.Formats.Asn1, Version=9.0.0.10, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>packages\System.Formats.Asn1.9.0.10\lib\net462\System.Formats.Asn1.dll</HintPath>
     </Reference>
@@ -151,6 +155,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\Functions.cs" />
+    <Compile Include="Forms\Form_AboutUs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_AboutUs.Designer.cs">
+      <DependentUpon>Form_AboutUs.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Form_DoanhThu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -181,6 +191,12 @@
     <Compile Include="Forms\Form_DataStorage.Designer.cs">
       <DependentUpon>Form_DataStorage.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Form_Exit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_Exit.Designer.cs">
+      <DependentUpon>Form_Exit.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Form_HangSanXuat.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -198,6 +214,12 @@
     </Compile>
     <Compile Include="Forms\Form_KhachHang.Designer.cs">
       <DependentUpon>Form_KhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_Menu.Designer.cs">
+      <DependentUpon>Form_Menu.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Form_Monitor.cs">
       <SubType>Form</SubType>
@@ -228,12 +250,6 @@
     </Compile>
     <Compile Include="Forms\Form_Login.Designer.cs">
       <DependentUpon>Form_Login.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Form_MainMenu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Form_MainMenu.Designer.cs">
-      <DependentUpon>Form_MainMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Form_PC.cs">
       <SubType>Form</SubType>
@@ -273,6 +289,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\Form_AboutUs.resx">
+      <DependentUpon>Form_AboutUs.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Form_DoanhThu.resx">
       <DependentUpon>Form_DoanhThu.cs</DependentUpon>
     </EmbeddedResource>
@@ -288,6 +307,9 @@
     <EmbeddedResource Include="Forms\Form_DataStorage.resx">
       <DependentUpon>Form_DataStorage.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_Exit.resx">
+      <DependentUpon>Form_Exit.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Form_HangSanXuat.resx">
       <DependentUpon>Form_HangSanXuat.cs</DependentUpon>
     </EmbeddedResource>
@@ -296,6 +318,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Form_KhachHang.resx">
       <DependentUpon>Form_KhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_Menu.resx">
+      <DependentUpon>Form_Menu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Form_Monitor.resx">
       <DependentUpon>Form_Monitor.cs</DependentUpon>
@@ -308,9 +333,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Form_Login.resx">
       <DependentUpon>Form_Login.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Form_MainMenu.resx">
-      <DependentUpon>Form_MainMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Form_Mainboard.resx">
       <DependentUpon>Form_Mainboard.cs</DependentUpon>

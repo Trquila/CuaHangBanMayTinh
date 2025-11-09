@@ -27,6 +27,7 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_DoanhThu));
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -68,9 +69,9 @@
             this.groupBox1.Controls.Add(this.rdbKhoang);
             this.groupBox1.Controls.Add(this.rdbNgay);
             this.groupBox1.Location = new System.Drawing.Point(77, 107);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(771, 143);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
@@ -99,7 +100,7 @@
             // mskDen
             // 
             this.mskDen.Location = new System.Drawing.Point(508, 87);
-            this.mskDen.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.mskDen.Margin = new System.Windows.Forms.Padding(4);
             this.mskDen.Mask = "00/00/0000";
             this.mskDen.Name = "mskDen";
             this.mskDen.Size = new System.Drawing.Size(132, 22);
@@ -110,7 +111,7 @@
             // mskTu
             // 
             this.mskTu.Location = new System.Drawing.Point(305, 87);
-            this.mskTu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.mskTu.Margin = new System.Windows.Forms.Padding(4);
             this.mskTu.Mask = "00/00/0000";
             this.mskTu.Name = "mskTu";
             this.mskTu.Size = new System.Drawing.Size(132, 22);
@@ -121,7 +122,7 @@
             // mskNgay
             // 
             this.mskNgay.Location = new System.Drawing.Point(271, 43);
-            this.mskNgay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.mskNgay.Margin = new System.Windows.Forms.Padding(4);
             this.mskNgay.Mask = "00/00/0000";
             this.mskNgay.Name = "mskNgay";
             this.mskNgay.Size = new System.Drawing.Size(132, 22);
@@ -133,7 +134,7 @@
             // 
             this.rdbKhoang.AutoSize = true;
             this.rdbKhoang.Location = new System.Drawing.Point(105, 89);
-            this.rdbKhoang.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rdbKhoang.Margin = new System.Windows.Forms.Padding(4);
             this.rdbKhoang.Name = "rdbKhoang";
             this.rdbKhoang.Size = new System.Drawing.Size(115, 20);
             this.rdbKhoang.TabIndex = 1;
@@ -146,7 +147,7 @@
             // 
             this.rdbNgay.AutoSize = true;
             this.rdbNgay.Location = new System.Drawing.Point(105, 44);
-            this.rdbNgay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rdbNgay.Margin = new System.Windows.Forms.Padding(4);
             this.rdbNgay.Name = "rdbNgay";
             this.rdbNgay.Size = new System.Drawing.Size(99, 20);
             this.rdbNgay.TabIndex = 0;
@@ -169,7 +170,7 @@
             // 
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView.Location = new System.Drawing.Point(77, 274);
-            this.dataGridView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView.Name = "dataGridView";
             this.dataGridView.RowHeadersWidth = 51;
             this.dataGridView.Size = new System.Drawing.Size(1172, 222);
@@ -177,10 +178,11 @@
             // 
             // btnxem
             // 
-            this.btnxem.BackgroundImage = global::pc_market.Properties.Resources.display;
             this.btnxem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnxem.Image = ((System.Drawing.Image)(resources.GetObject("btnxem.Image")));
+            this.btnxem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnxem.Location = new System.Drawing.Point(859, 550);
-            this.btnxem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnxem.Margin = new System.Windows.Forms.Padding(4);
             this.btnxem.Name = "btnxem";
             this.btnxem.Size = new System.Drawing.Size(100, 49);
             this.btnxem.TabIndex = 6;
@@ -190,8 +192,10 @@
             // 
             // btnxuatfile
             // 
+            this.btnxuatfile.Image = ((System.Drawing.Image)(resources.GetObject("btnxuatfile.Image")));
+            this.btnxuatfile.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnxuatfile.Location = new System.Drawing.Point(987, 550);
-            this.btnxuatfile.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnxuatfile.Margin = new System.Windows.Forms.Padding(4);
             this.btnxuatfile.Name = "btnxuatfile";
             this.btnxuatfile.Size = new System.Drawing.Size(135, 49);
             this.btnxuatfile.TabIndex = 7;
@@ -201,10 +205,11 @@
             // 
             // btnthoat
             // 
-            this.btnthoat.BackgroundImage = global::pc_market.Properties.Resources.close;
             this.btnthoat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnthoat.Image = ((System.Drawing.Image)(resources.GetObject("btnthoat.Image")));
+            this.btnthoat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnthoat.Location = new System.Drawing.Point(1149, 550);
-            this.btnthoat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnthoat.Margin = new System.Windows.Forms.Padding(4);
             this.btnthoat.Name = "btnthoat";
             this.btnthoat.Size = new System.Drawing.Size(100, 49);
             this.btnthoat.TabIndex = 9;
@@ -215,7 +220,7 @@
             // txtdoanhthu
             // 
             this.txtdoanhthu.Location = new System.Drawing.Point(200, 510);
-            this.txtdoanhthu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtdoanhthu.Margin = new System.Windows.Forms.Padding(4);
             this.txtdoanhthu.Name = "txtdoanhthu";
             this.txtdoanhthu.ReadOnly = true;
             this.txtdoanhthu.Size = new System.Drawing.Size(243, 22);
@@ -234,8 +239,8 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "Form_DoanhThu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

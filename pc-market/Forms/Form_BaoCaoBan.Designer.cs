@@ -45,36 +45,39 @@ namespace pc_market.Forms
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.label1.Location = new System.Drawing.Point(287, 34);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(383, 42);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(359, 37);
+            this.label1.Size = new System.Drawing.Size(440, 46);
             this.label1.TabIndex = 24;
             this.label1.Text = "BÁO CÁO BÁN HÀNG";
             // 
             // dataGridView
             // 
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView.Location = new System.Drawing.Point(45, 121);
+            this.dataGridView.Location = new System.Drawing.Point(60, 149);
+            this.dataGridView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView.Name = "dataGridView";
-            this.dataGridView.Size = new System.Drawing.Size(616, 291);
+            this.dataGridView.RowHeadersWidth = 51;
+            this.dataGridView.Size = new System.Drawing.Size(821, 358);
             this.dataGridView.TabIndex = 25;
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(691, 121);
+            this.dataGridView1.Location = new System.Drawing.Point(921, 149);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(192, 291);
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.Size = new System.Drawing.Size(256, 358);
             this.dataGridView1.TabIndex = 25;
             // 
             // btnexport
             // 
             this.btnexport.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnexport.Location = new System.Drawing.Point(763, 426);
-            this.btnexport.Margin = new System.Windows.Forms.Padding(2);
+            this.btnexport.Location = new System.Drawing.Point(1017, 524);
+            this.btnexport.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnexport.Name = "btnexport";
-            this.btnexport.Size = new System.Drawing.Size(120, 40);
+            this.btnexport.Size = new System.Drawing.Size(160, 49);
             this.btnexport.TabIndex = 34;
             this.btnexport.Text = "In báo cáo bán hàng";
             this.btnexport.UseVisualStyleBackColor = true;
@@ -82,41 +85,45 @@ namespace pc_market.Forms
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(45, 99);
+            this.label2.Location = new System.Drawing.Point(60, 122);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(141, 19);
+            this.label2.Size = new System.Drawing.Size(188, 23);
             this.label2.TabIndex = 35;
             this.label2.Text = "Chi tiết hóa đơn bán hàng";
             // 
             // label3
             // 
-            this.label3.Location = new System.Drawing.Point(691, 99);
+            this.label3.Location = new System.Drawing.Point(921, 122);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(192, 19);
+            this.label3.Size = new System.Drawing.Size(256, 23);
             this.label3.TabIndex = 36;
             this.label3.Text = "Thông tin số lượng sản phẩm đã bán";
             // 
             // Form_BaoCaoBan
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(931, 508);
+            this.ClientSize = new System.Drawing.Size(1241, 625);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnexport);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.dataGridView);
             this.Controls.Add(this.label1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.Name = "Form_BaoCaoBan";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Báo cáo: Báo cáo bán hàng";
+            this.Text = "Báo cáo bán hàng";
             this.Load += new System.EventHandler(this.frm_MH_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         private System.Windows.Forms.Label label2;

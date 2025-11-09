@@ -564,7 +564,7 @@ namespace pc_market.Forms {
             this.AutoScrollMinSize = new System.Drawing.Size(1302, 1080);
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(1800, 1055);
+            this.ClientSize = new System.Drawing.Size(1779, 1055);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.button7);
@@ -610,7 +610,7 @@ namespace pc_market.Forms {
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form_PC";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

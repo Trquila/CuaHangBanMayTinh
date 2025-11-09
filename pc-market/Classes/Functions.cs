@@ -36,9 +36,28 @@ namespace pc_market.Classes {
 
         // Đổ dữ liệu vào DataTable
         public static DataTable GetDataToTable(string query) {
-            SqlDataAdapter data = new SqlDataAdapter(query, conn);
+            if (string.IsNullOrWhiteSpace(query))
+                throw new ArgumentException("Query must not be null or empty.", nameof(query));
+
+            if (conn == null || conn.State != ConnectionState.Open) {
+                Connect();
+                if (conn == null || conn.State != ConnectionState.Open)
+                    throw new InvalidOperationException("Database connection is not available.");
+            }
+
             DataTable table = new DataTable();
-            data.Fill(table);
+            using (var command = new SqlCommand(query, conn))
+            using (var adapter = new SqlDataAdapter(command)) {
+                try {
+                    adapter.Fill(table);
+                }
+                catch (SqlException ex) {
+                    // Consider logging instead of showing a MessageBox here.
+                    MessageBox.Show($"Error executing query: {ex.Message}", "Database Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    // Decide whether to rethrow, return empty table, or return null.
+                }
+            }
+
             return table;
         }
 
@@ -99,13 +118,49 @@ namespace pc_market.Classes {
 
         // Đổ dữ liệu vào ComboBox
         public static void FillCombo(string query, System.Windows.Forms.ComboBox comboBox, string value, string name) {
-            SqlDataAdapter data = new SqlDataAdapter(query, conn);
-            DataTable table = new DataTable();
-            data.Fill(table);
+            if (comboBox == null)
+                throw new ArgumentNullException(nameof(comboBox));
+            if (string.IsNullOrWhiteSpace(query))
+                throw new ArgumentException("Query must not be null or empty.", nameof(query));
 
-            comboBox.DataSource = table;
-            comboBox.ValueMember = value; // Trường giá trị
-            comboBox.DisplayMember = name; // Trường hiển thị
+            if (conn == null || conn.State != ConnectionState.Open) {
+                Connect();
+                if (conn == null || conn.State != ConnectionState.Open) {
+                    MessageBox.Show("Database connection is not available.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+            }
+
+            var table = new DataTable();
+            try {
+                using (var adapter = new SqlDataAdapter(query, conn)) {
+                    adapter.Fill(table);
+                }
+            }
+            catch (SqlException ex) {
+                MessageBox.Show($"Error filling combo box: {ex.Message}", "Database Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            // Ensure UI update happens on UI thread
+            if (comboBox.InvokeRequired) {
+                comboBox.Invoke(new Action(() => {
+                    comboBox.BeginUpdate();
+                    comboBox.DataSource = table;
+                    comboBox.ValueMember = value;
+                    comboBox.DisplayMember = name;
+                    comboBox.EndUpdate();
+                    comboBox.SelectedIndex = -1;
+                }));
+            }
+            else {
+                comboBox.BeginUpdate();
+                comboBox.DataSource = table;
+                comboBox.ValueMember = value;
+                comboBox.DisplayMember = name;
+                comboBox.EndUpdate();
+                comboBox.SelectedIndex = -1;
+            }
         }
 
      

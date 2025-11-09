@@ -30,6 +30,7 @@ namespace pc_market.Forms
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_HangSanXuat));
             this.btnHienthids = new System.Windows.Forms.Button();
             this.btnTimkiem = new System.Windows.Forms.Button();
             this.btnBoqua = new System.Windows.Forms.Button();
@@ -51,12 +52,13 @@ namespace pc_market.Forms
             // 
             // btnHienthids
             // 
-            this.btnHienthids.BackgroundImage = global::pc_market.Properties.Resources.display;
             this.btnHienthids.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnHienthids.Location = new System.Drawing.Point(481, 381);
-            this.btnHienthids.Margin = new System.Windows.Forms.Padding(2);
+            this.btnHienthids.Image = ((System.Drawing.Image)(resources.GetObject("btnHienthids.Image")));
+            this.btnHienthids.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHienthids.Location = new System.Drawing.Point(672, 469);
+            this.btnHienthids.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnHienthids.Name = "btnHienthids";
-            this.btnHienthids.Size = new System.Drawing.Size(75, 37);
+            this.btnHienthids.Size = new System.Drawing.Size(121, 46);
             this.btnHienthids.TabIndex = 33;
             this.btnHienthids.Text = "Hiển thị DS";
             this.btnHienthids.UseVisualStyleBackColor = true;
@@ -64,12 +66,13 @@ namespace pc_market.Forms
             // 
             // btnTimkiem
             // 
-            this.btnTimkiem.BackgroundImage = global::pc_market.Properties.Resources.search;
             this.btnTimkiem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnTimkiem.Location = new System.Drawing.Point(409, 381);
-            this.btnTimkiem.Margin = new System.Windows.Forms.Padding(2);
+            this.btnTimkiem.Image = ((System.Drawing.Image)(resources.GetObject("btnTimkiem.Image")));
+            this.btnTimkiem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTimkiem.Location = new System.Drawing.Point(545, 469);
+            this.btnTimkiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnTimkiem.Name = "btnTimkiem";
-            this.btnTimkiem.Size = new System.Drawing.Size(68, 37);
+            this.btnTimkiem.Size = new System.Drawing.Size(111, 46);
             this.btnTimkiem.TabIndex = 32;
             this.btnTimkiem.Text = "Tìm kiếm";
             this.btnTimkiem.UseVisualStyleBackColor = true;
@@ -77,12 +80,13 @@ namespace pc_market.Forms
             // 
             // btnBoqua
             // 
-            this.btnBoqua.BackgroundImage = global::pc_market.Properties.Resources.skip;
             this.btnBoqua.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnBoqua.Location = new System.Drawing.Point(337, 381);
-            this.btnBoqua.Margin = new System.Windows.Forms.Padding(2);
+            this.btnBoqua.Image = ((System.Drawing.Image)(resources.GetObject("btnBoqua.Image")));
+            this.btnBoqua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBoqua.Location = new System.Drawing.Point(449, 469);
+            this.btnBoqua.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBoqua.Name = "btnBoqua";
-            this.btnBoqua.Size = new System.Drawing.Size(68, 37);
+            this.btnBoqua.Size = new System.Drawing.Size(91, 46);
             this.btnBoqua.TabIndex = 31;
             this.btnBoqua.Text = "Bỏ qua";
             this.btnBoqua.UseVisualStyleBackColor = true;
@@ -90,12 +94,13 @@ namespace pc_market.Forms
             // 
             // btnLuu
             // 
-            this.btnLuu.BackgroundImage = global::pc_market.Properties.Resources.save;
             this.btnLuu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnLuu.Location = new System.Drawing.Point(265, 381);
-            this.btnLuu.Margin = new System.Windows.Forms.Padding(2);
+            this.btnLuu.Image = ((System.Drawing.Image)(resources.GetObject("btnLuu.Image")));
+            this.btnLuu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLuu.Location = new System.Drawing.Point(353, 469);
+            this.btnLuu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(68, 37);
+            this.btnLuu.Size = new System.Drawing.Size(91, 46);
             this.btnLuu.TabIndex = 30;
             this.btnLuu.Text = "Lưu";
             this.btnLuu.UseVisualStyleBackColor = true;
@@ -103,12 +108,13 @@ namespace pc_market.Forms
             // 
             // btnSua
             // 
-            this.btnSua.BackgroundImage = global::pc_market.Properties.Resources.edit;
             this.btnSua.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnSua.Location = new System.Drawing.Point(193, 381);
-            this.btnSua.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSua.Image = ((System.Drawing.Image)(resources.GetObject("btnSua.Image")));
+            this.btnSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSua.Location = new System.Drawing.Point(257, 469);
+            this.btnSua.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(68, 37);
+            this.btnSua.Size = new System.Drawing.Size(91, 46);
             this.btnSua.TabIndex = 29;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
@@ -116,12 +122,13 @@ namespace pc_market.Forms
             // 
             // btnXoa
             // 
-            this.btnXoa.BackgroundImage = global::pc_market.Properties.Resources.delete;
             this.btnXoa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnXoa.Location = new System.Drawing.Point(121, 381);
-            this.btnXoa.Margin = new System.Windows.Forms.Padding(2);
+            this.btnXoa.Image = ((System.Drawing.Image)(resources.GetObject("btnXoa.Image")));
+            this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnXoa.Location = new System.Drawing.Point(161, 469);
+            this.btnXoa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(68, 37);
+            this.btnXoa.Size = new System.Drawing.Size(91, 46);
             this.btnXoa.TabIndex = 28;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
@@ -129,12 +136,13 @@ namespace pc_market.Forms
             // 
             // btnThem
             // 
-            this.btnThem.BackgroundImage = global::pc_market.Properties.Resources.add;
             this.btnThem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnThem.Location = new System.Drawing.Point(49, 381);
-            this.btnThem.Margin = new System.Windows.Forms.Padding(2);
+            this.btnThem.Image = ((System.Drawing.Image)(resources.GetObject("btnThem.Image")));
+            this.btnThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnThem.Location = new System.Drawing.Point(64, 469);
+            this.btnThem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(68, 37);
+            this.btnThem.Size = new System.Drawing.Size(91, 46);
             this.btnThem.TabIndex = 27;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = true;
@@ -143,51 +151,50 @@ namespace pc_market.Forms
             // dataGridView
             // 
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView.Location = new System.Drawing.Point(49, 175);
-            this.dataGridView.Margin = new System.Windows.Forms.Padding(2);
+            this.dataGridView.Location = new System.Drawing.Point(65, 215);
+            this.dataGridView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView.Name = "dataGridView";
             this.dataGridView.RowHeadersWidth = 51;
             this.dataGridView.RowTemplate.Height = 24;
-            this.dataGridView.Size = new System.Drawing.Size(698, 192);
+            this.dataGridView.Size = new System.Drawing.Size(931, 236);
             this.dataGridView.TabIndex = 26;
             this.dataGridView.Click += new System.EventHandler(this.dgridHSX_Click);
             // 
             // txttenHSX
             // 
-            this.txttenHSX.Location = new System.Drawing.Point(102, 67);
-            this.txttenHSX.Margin = new System.Windows.Forms.Padding(2);
+            this.txttenHSX.Location = new System.Drawing.Point(136, 82);
+            this.txttenHSX.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txttenHSX.Name = "txttenHSX";
-            this.txttenHSX.Size = new System.Drawing.Size(207, 20);
+            this.txttenHSX.Size = new System.Drawing.Size(275, 22);
             this.txttenHSX.TabIndex = 24;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(28, 32);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(37, 39);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(47, 13);
+            this.label2.Size = new System.Drawing.Size(56, 16);
             this.label2.TabIndex = 1;
             this.label2.Text = "Mã HSX";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(28, 70);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(37, 86);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(51, 13);
+            this.label4.Size = new System.Drawing.Size(61, 16);
             this.label4.TabIndex = 5;
             this.label4.Text = "Tên HSX";
             // 
             // btnDong
             // 
-            this.btnDong.BackgroundImage = global::pc_market.Properties.Resources.close;
             this.btnDong.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnDong.Location = new System.Drawing.Point(679, 381);
-            this.btnDong.Margin = new System.Windows.Forms.Padding(2);
+            this.btnDong.Image = ((System.Drawing.Image)(resources.GetObject("btnDong.Image")));
+            this.btnDong.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDong.Location = new System.Drawing.Point(903, 469);
+            this.btnDong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDong.Name = "btnDong";
-            this.btnDong.Size = new System.Drawing.Size(68, 37);
+            this.btnDong.Size = new System.Drawing.Size(93, 46);
             this.btnDong.TabIndex = 34;
             this.btnDong.Text = "Đóng";
             this.btnDong.UseVisualStyleBackColor = true;
@@ -195,10 +202,10 @@ namespace pc_market.Forms
             // 
             // txtmaHSX
             // 
-            this.txtmaHSX.Location = new System.Drawing.Point(102, 29);
-            this.txtmaHSX.Margin = new System.Windows.Forms.Padding(2);
+            this.txtmaHSX.Location = new System.Drawing.Point(136, 36);
+            this.txtmaHSX.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtmaHSX.Name = "txtmaHSX";
-            this.txtmaHSX.Size = new System.Drawing.Size(207, 20);
+            this.txtmaHSX.Size = new System.Drawing.Size(275, 22);
             this.txtmaHSX.TabIndex = 23;
             // 
             // label1
@@ -206,10 +213,9 @@ namespace pc_market.Forms
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.label1.Location = new System.Drawing.Point(251, 21);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(335, 26);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(295, 37);
+            this.label1.Size = new System.Drawing.Size(361, 46);
             this.label1.TabIndex = 22;
             this.label1.Text = "HÃNG SẢN XUẤT";
             // 
@@ -219,32 +225,33 @@ namespace pc_market.Forms
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.txttenHSX);
             this.groupBox1.Controls.Add(this.txtmaHSX);
-            this.groupBox1.Location = new System.Drawing.Point(49, 60);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox1.Location = new System.Drawing.Point(65, 74);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Size = new System.Drawing.Size(698, 106);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox1.Size = new System.Drawing.Size(931, 130);
             this.groupBox1.TabIndex = 37;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin hãng sản xuất";
             // 
             // Form_HangSanXuat
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.btnHienthids);
             this.Controls.Add(this.btnTimkiem);
             this.Controls.Add(this.btnBoqua);
             this.Controls.Add(this.btnLuu);
+            this.Controls.Add(this.btnThem);
             this.Controls.Add(this.btnSua);
             this.Controls.Add(this.btnXoa);
-            this.Controls.Add(this.btnThem);
             this.Controls.Add(this.dataGridView);
             this.Controls.Add(this.btnDong);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "Form_HangSanXuat";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -255,6 +262,7 @@ namespace pc_market.Forms
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         private System.Windows.Forms.Button btnHienthids;
