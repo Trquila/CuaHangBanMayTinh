@@ -30,6 +30,7 @@ namespace pc_market.Forms
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Monitor));
             this.btnHienthids = new System.Windows.Forms.Button();
             this.btnSearch = new System.Windows.Forms.Button();
             this.btnBoqua = new System.Windows.Forms.Button();
@@ -56,12 +57,13 @@ namespace pc_market.Forms
             // 
             // btnHienthids
             // 
-            this.btnHienthids.BackgroundImage = global::pc_market.Properties.Resources.display;
             this.btnHienthids.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnHienthids.Location = new System.Drawing.Point(646, 529);
+            this.btnHienthids.Image = ((System.Drawing.Image)(resources.GetObject("btnHienthids.Image")));
+            this.btnHienthids.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHienthids.Location = new System.Drawing.Point(666, 529);
             this.btnHienthids.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnHienthids.Name = "btnHienthids";
-            this.btnHienthids.Size = new System.Drawing.Size(100, 46);
+            this.btnHienthids.Size = new System.Drawing.Size(118, 46);
             this.btnHienthids.TabIndex = 48;
             this.btnHienthids.Text = "Hiển thị DS";
             this.btnHienthids.UseVisualStyleBackColor = true;
@@ -69,12 +71,13 @@ namespace pc_market.Forms
             // 
             // btnSearch
             // 
-            this.btnSearch.BackgroundImage = global::pc_market.Properties.Resources.search;
             this.btnSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnSearch.Image = ((System.Drawing.Image)(resources.GetObject("btnSearch.Image")));
+            this.btnSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSearch.Location = new System.Drawing.Point(549, 529);
             this.btnSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(91, 46);
+            this.btnSearch.Size = new System.Drawing.Size(111, 46);
             this.btnSearch.TabIndex = 47;
             this.btnSearch.Text = "Tìm kiếm";
             this.btnSearch.UseVisualStyleBackColor = true;
@@ -82,8 +85,9 @@ namespace pc_market.Forms
             // 
             // btnBoqua
             // 
-            this.btnBoqua.BackgroundImage = global::pc_market.Properties.Resources.skip;
             this.btnBoqua.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnBoqua.Image = ((System.Drawing.Image)(resources.GetObject("btnBoqua.Image")));
+            this.btnBoqua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBoqua.Location = new System.Drawing.Point(452, 529);
             this.btnBoqua.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBoqua.Name = "btnBoqua";
@@ -95,8 +99,9 @@ namespace pc_market.Forms
             // 
             // btnLuu
             // 
-            this.btnLuu.BackgroundImage = global::pc_market.Properties.Resources.save;
             this.btnLuu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnLuu.Image = ((System.Drawing.Image)(resources.GetObject("btnLuu.Image")));
+            this.btnLuu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnLuu.Location = new System.Drawing.Point(355, 529);
             this.btnLuu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLuu.Name = "btnLuu";
@@ -108,8 +113,9 @@ namespace pc_market.Forms
             // 
             // btnSua
             // 
-            this.btnSua.BackgroundImage = global::pc_market.Properties.Resources.edit;
             this.btnSua.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnSua.Image = ((System.Drawing.Image)(resources.GetObject("btnSua.Image")));
+            this.btnSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSua.Location = new System.Drawing.Point(258, 529);
             this.btnSua.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSua.Name = "btnSua";
@@ -121,8 +127,9 @@ namespace pc_market.Forms
             // 
             // btnXoa
             // 
-            this.btnXoa.BackgroundImage = global::pc_market.Properties.Resources.delete;
             this.btnXoa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnXoa.Image = ((System.Drawing.Image)(resources.GetObject("btnXoa.Image")));
+            this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnXoa.Location = new System.Drawing.Point(161, 529);
             this.btnXoa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnXoa.Name = "btnXoa";
@@ -134,8 +141,9 @@ namespace pc_market.Forms
             // 
             // btnThem
             // 
-            this.btnThem.BackgroundImage = global::pc_market.Properties.Resources.add;
             this.btnThem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnThem.Image = ((System.Drawing.Image)(resources.GetObject("btnThem.Image")));
+            this.btnThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnThem.Location = new System.Drawing.Point(64, 529);
             this.btnThem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThem.Name = "btnThem";
@@ -168,8 +176,9 @@ namespace pc_market.Forms
             // 
             // btnDong
             // 
-            this.btnDong.BackgroundImage = global::pc_market.Properties.Resources.close;
             this.btnDong.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnDong.Image = ((System.Drawing.Image)(resources.GetObject("btnDong.Image")));
+            this.btnDong.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDong.Location = new System.Drawing.Point(904, 529);
             this.btnDong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDong.Name = "btnDong";

@@ -26,7 +26,7 @@ namespace pc_market.Forms {
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
-            this.label1 = new System.Windows.Forms.Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Mainboard));
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -43,25 +43,14 @@ namespace pc_market.Forms {
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
+            this.btnDong = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.label1.Location = new System.Drawing.Point(16, 11);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1409, 86);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "BO MẠCH CHỦ - MAINBOARD";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(71, 124);
+            this.label2.Location = new System.Drawing.Point(72, 65);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(137, 26);
@@ -70,16 +59,16 @@ namespace pc_market.Forms {
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(216, 123);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox1.Location = new System.Drawing.Point(217, 64);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(463, 22);
             this.textBox1.TabIndex = 2;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(216, 206);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox2.Location = new System.Drawing.Point(217, 147);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(463, 22);
             this.textBox2.TabIndex = 4;
@@ -87,7 +76,7 @@ namespace pc_market.Forms {
             // label3
             // 
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(71, 207);
+            this.label3.Location = new System.Drawing.Point(72, 148);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(137, 26);
@@ -96,8 +85,8 @@ namespace pc_market.Forms {
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(216, 290);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox3.Location = new System.Drawing.Point(217, 231);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(463, 22);
             this.textBox3.TabIndex = 6;
@@ -105,7 +94,7 @@ namespace pc_market.Forms {
             // label4
             // 
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(71, 292);
+            this.label4.Location = new System.Drawing.Point(72, 233);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(137, 26);
@@ -115,7 +104,7 @@ namespace pc_market.Forms {
             // label5
             // 
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(751, 292);
+            this.label5.Location = new System.Drawing.Point(752, 233);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(137, 26);
@@ -125,7 +114,7 @@ namespace pc_market.Forms {
             // label7
             // 
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(751, 124);
+            this.label7.Location = new System.Drawing.Point(752, 65);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(137, 26);
@@ -137,16 +126,16 @@ namespace pc_market.Forms {
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.IntegralHeight = false;
-            this.comboBox1.Location = new System.Drawing.Point(896, 290);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBox1.Location = new System.Drawing.Point(897, 231);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(465, 24);
             this.comboBox1.TabIndex = 12;
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(896, 123);
-            this.richTextBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.richTextBox1.Location = new System.Drawing.Point(897, 64);
+            this.richTextBox1.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(465, 106);
             this.richTextBox1.TabIndex = 13;
@@ -155,23 +144,24 @@ namespace pc_market.Forms {
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(71, 361);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Location = new System.Drawing.Point(71, 280);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(1292, 347);
+            this.dataGridView1.Size = new System.Drawing.Size(1292, 428);
             this.dataGridView1.TabIndex = 14;
             this.dataGridView1.Click += new System.EventHandler(this.DataGridView_Click);
             // 
             // button1
             // 
-            this.button1.BackgroundImage = global::pc_market.Properties.Resources.add;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.Location = new System.Drawing.Point(71, 750);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(185, 49);
+            this.button1.Size = new System.Drawing.Size(137, 49);
             this.button1.TabIndex = 15;
             this.button1.Text = "Thêm";
             this.button1.UseVisualStyleBackColor = true;
@@ -179,13 +169,14 @@ namespace pc_market.Forms {
             // 
             // button2
             // 
-            this.button2.BackgroundImage = global::pc_market.Properties.Resources.edit;
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(349, 750);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(234, 750);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(185, 49);
+            this.button2.Size = new System.Drawing.Size(133, 49);
             this.button2.TabIndex = 16;
             this.button2.Text = "Sửa";
             this.button2.UseVisualStyleBackColor = true;
@@ -193,13 +184,14 @@ namespace pc_market.Forms {
             // 
             // button3
             // 
-            this.button3.BackgroundImage = global::pc_market.Properties.Resources.delete;
             this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(628, 750);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.Location = new System.Drawing.Point(403, 750);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(185, 49);
+            this.button3.Size = new System.Drawing.Size(133, 49);
             this.button3.TabIndex = 17;
             this.button3.Text = "Xóa";
             this.button3.UseVisualStyleBackColor = true;
@@ -208,14 +200,15 @@ namespace pc_market.Forms {
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.White;
-            this.button4.BackgroundImage = global::pc_market.Properties.Resources.save;
             this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.Black;
-            this.button4.Location = new System.Drawing.Point(896, 750);
-            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
+            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button4.Location = new System.Drawing.Point(563, 750);
+            this.button4.Margin = new System.Windows.Forms.Padding(4);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(185, 49);
+            this.button4.Size = new System.Drawing.Size(133, 49);
             this.button4.TabIndex = 18;
             this.button4.Text = "Lưu";
             this.button4.UseVisualStyleBackColor = false;
@@ -224,17 +217,32 @@ namespace pc_market.Forms {
             // button5
             // 
             this.button5.BackColor = System.Drawing.Color.White;
-            this.button5.BackgroundImage = global::pc_market.Properties.Resources.skip;
             this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(1177, 750);
-            this.button5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
+            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button5.Location = new System.Drawing.Point(720, 750);
+            this.button5.Margin = new System.Windows.Forms.Padding(4);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(185, 49);
+            this.button5.Size = new System.Drawing.Size(133, 49);
             this.button5.TabIndex = 19;
             this.button5.Text = "Bỏ qua";
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.ButtonReset_Click);
+            // 
+            // btnDong
+            // 
+            this.btnDong.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnDong.Image = ((System.Drawing.Image)(resources.GetObject("btnDong.Image")));
+            this.btnDong.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDong.Location = new System.Drawing.Point(1228, 751);
+            this.btnDong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnDong.Name = "btnDong";
+            this.btnDong.Size = new System.Drawing.Size(133, 49);
+            this.btnDong.TabIndex = 38;
+            this.btnDong.Text = "Đóng";
+            this.btnDong.UseVisualStyleBackColor = true;
+            this.btnDong.Click += new System.EventHandler(this.btnDong_Click);
             // 
             // Form_Mainboard
             // 
@@ -242,6 +250,7 @@ namespace pc_market.Forms {
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1441, 850);
+            this.Controls.Add(this.btnDong);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
@@ -258,9 +267,8 @@ namespace pc_market.Forms {
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "Form_Mainboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -296,8 +304,8 @@ namespace pc_market.Forms {
 
         private System.Windows.Forms.Label label2;
 
-        private System.Windows.Forms.Label label1;
-
         #endregion
+
+        private System.Windows.Forms.Button btnDong;
     }
 }

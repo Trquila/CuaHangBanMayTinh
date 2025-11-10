@@ -27,7 +27,7 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
-            this.label1 = new System.Windows.Forms.Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_NCC));
             this.label2 = new System.Windows.Forms.Label();
             this.txtMancc = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -49,17 +49,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgridNCC)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.label1.Location = new System.Drawing.Point(339, 11);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(340, 46);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "NHÀ CUNG CẤP";
             // 
             // label2
             // 
@@ -124,32 +113,34 @@
             // dgridNCC
             // 
             this.dgridNCC.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgridNCC.Location = new System.Drawing.Point(51, 212);
+            this.dgridNCC.Location = new System.Drawing.Point(51, 164);
             this.dgridNCC.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgridNCC.Name = "dgridNCC";
             this.dgridNCC.RowHeadersWidth = 51;
             this.dgridNCC.RowTemplate.Height = 24;
-            this.dgridNCC.Size = new System.Drawing.Size(931, 241);
+            this.dgridNCC.Size = new System.Drawing.Size(931, 289);
             this.dgridNCC.TabIndex = 9;
             this.dgridNCC.Click += new System.EventHandler(this.dgridNCC_Click);
             // 
             // btnThem
             // 
-            this.btnThem.BackgroundImage = global::pc_market.Properties.Resources.add;
+            this.btnThem.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btnThem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnThem.Image = ((System.Drawing.Image)(resources.GetObject("btnThem.Image")));
             this.btnThem.Location = new System.Drawing.Point(51, 474);
             this.btnThem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(91, 46);
             this.btnThem.TabIndex = 10;
             this.btnThem.Text = "Thêm";
-            this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.UseVisualStyleBackColor = false;
             this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // btnXoa
             // 
-            this.btnXoa.BackgroundImage = global::pc_market.Properties.Resources.delete;
             this.btnXoa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnXoa.Image = ((System.Drawing.Image)(resources.GetObject("btnXoa.Image")));
+            this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnXoa.Location = new System.Drawing.Point(147, 474);
             this.btnXoa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnXoa.Name = "btnXoa";
@@ -161,8 +152,9 @@
             // 
             // btnSua
             // 
-            this.btnSua.BackgroundImage = global::pc_market.Properties.Resources.edit;
             this.btnSua.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnSua.Image = ((System.Drawing.Image)(resources.GetObject("btnSua.Image")));
+            this.btnSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSua.Location = new System.Drawing.Point(243, 474);
             this.btnSua.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSua.Name = "btnSua";
@@ -174,8 +166,9 @@
             // 
             // btnLuu
             // 
-            this.btnLuu.BackgroundImage = global::pc_market.Properties.Resources.save;
             this.btnLuu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnLuu.Image = ((System.Drawing.Image)(resources.GetObject("btnLuu.Image")));
+            this.btnLuu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnLuu.Location = new System.Drawing.Point(339, 474);
             this.btnLuu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLuu.Name = "btnLuu";
@@ -187,8 +180,9 @@
             // 
             // btnBoqua
             // 
-            this.btnBoqua.BackgroundImage = global::pc_market.Properties.Resources.skip;
             this.btnBoqua.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnBoqua.Image = ((System.Drawing.Image)(resources.GetObject("btnBoqua.Image")));
+            this.btnBoqua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBoqua.Location = new System.Drawing.Point(435, 474);
             this.btnBoqua.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBoqua.Name = "btnBoqua";
@@ -200,12 +194,13 @@
             // 
             // btnTimkiem
             // 
-            this.btnTimkiem.BackgroundImage = global::pc_market.Properties.Resources.search;
             this.btnTimkiem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnTimkiem.Image = ((System.Drawing.Image)(resources.GetObject("btnTimkiem.Image")));
+            this.btnTimkiem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTimkiem.Location = new System.Drawing.Point(531, 474);
             this.btnTimkiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnTimkiem.Name = "btnTimkiem";
-            this.btnTimkiem.Size = new System.Drawing.Size(91, 46);
+            this.btnTimkiem.Size = new System.Drawing.Size(122, 46);
             this.btnTimkiem.TabIndex = 15;
             this.btnTimkiem.Text = "Tìm kiếm";
             this.btnTimkiem.UseVisualStyleBackColor = true;
@@ -213,12 +208,13 @@
             // 
             // btnHienthids
             // 
-            this.btnHienthids.BackgroundImage = global::pc_market.Properties.Resources.display;
             this.btnHienthids.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnHienthids.Location = new System.Drawing.Point(627, 474);
+            this.btnHienthids.Image = ((System.Drawing.Image)(resources.GetObject("btnHienthids.Image")));
+            this.btnHienthids.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHienthids.Location = new System.Drawing.Point(659, 474);
             this.btnHienthids.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnHienthids.Name = "btnHienthids";
-            this.btnHienthids.Size = new System.Drawing.Size(100, 46);
+            this.btnHienthids.Size = new System.Drawing.Size(125, 46);
             this.btnHienthids.TabIndex = 16;
             this.btnHienthids.Text = "Hiển thị DS";
             this.btnHienthids.UseVisualStyleBackColor = true;
@@ -226,8 +222,9 @@
             // 
             // btnDong
             // 
-            this.btnDong.BackgroundImage = global::pc_market.Properties.Resources.close;
             this.btnDong.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnDong.Image = ((System.Drawing.Image)(resources.GetObject("btnDong.Image")));
+            this.btnDong.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDong.Location = new System.Drawing.Point(891, 474);
             this.btnDong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDong.Name = "btnDong";
@@ -256,11 +253,11 @@
             this.groupBox1.Controls.Add(this.txtTenncc);
             this.groupBox1.Controls.Add(this.txtMancc);
             this.groupBox1.Controls.Add(this.txtDiachi);
-            this.groupBox1.Location = new System.Drawing.Point(51, 59);
+            this.groupBox1.Location = new System.Drawing.Point(51, 26);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(931, 130);
+            this.groupBox1.Size = new System.Drawing.Size(931, 126);
             this.groupBox1.TabIndex = 21;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin nhà cung cấp";
@@ -273,7 +270,6 @@
             this.Controls.Add(this.btnDong);
             this.Controls.Add(this.btnHienthids);
             this.Controls.Add(this.btnTimkiem);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnBoqua);
             this.Controls.Add(this.btnLuu);
             this.Controls.Add(this.btnSua);
@@ -292,13 +288,10 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtMancc;
         private System.Windows.Forms.Label label3;

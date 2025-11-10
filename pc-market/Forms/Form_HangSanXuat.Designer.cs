@@ -44,7 +44,6 @@ namespace pc_market.Forms
             this.label4 = new System.Windows.Forms.Label();
             this.btnDong = new System.Windows.Forms.Button();
             this.txtmaHSX = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -151,12 +150,12 @@ namespace pc_market.Forms
             // dataGridView
             // 
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView.Location = new System.Drawing.Point(65, 215);
+            this.dataGridView.Location = new System.Drawing.Point(65, 190);
             this.dataGridView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView.Name = "dataGridView";
             this.dataGridView.RowHeadersWidth = 51;
             this.dataGridView.RowTemplate.Height = 24;
-            this.dataGridView.Size = new System.Drawing.Size(931, 236);
+            this.dataGridView.Size = new System.Drawing.Size(931, 261);
             this.dataGridView.TabIndex = 26;
             this.dataGridView.Click += new System.EventHandler(this.dgridHSX_Click);
             // 
@@ -208,28 +207,17 @@ namespace pc_market.Forms
             this.txtmaHSX.Size = new System.Drawing.Size(275, 22);
             this.txtmaHSX.TabIndex = 23;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.label1.Location = new System.Drawing.Point(335, 26);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(361, 46);
-            this.label1.TabIndex = 22;
-            this.label1.Text = "HÃNG SẢN XUẤT";
-            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.txttenHSX);
             this.groupBox1.Controls.Add(this.txtmaHSX);
-            this.groupBox1.Location = new System.Drawing.Point(65, 74);
+            this.groupBox1.Location = new System.Drawing.Point(65, 37);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(931, 130);
+            this.groupBox1.Size = new System.Drawing.Size(931, 138);
             this.groupBox1.TabIndex = 37;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin hãng sản xuất";
@@ -248,7 +236,6 @@ namespace pc_market.Forms
             this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.dataGridView);
             this.Controls.Add(this.btnDong);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -261,7 +248,6 @@ namespace pc_market.Forms
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -278,7 +264,6 @@ namespace pc_market.Forms
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnDong;
         private System.Windows.Forms.TextBox txtmaHSX;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox1;
 
         #endregion

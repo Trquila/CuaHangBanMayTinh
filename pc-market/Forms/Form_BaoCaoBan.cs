@@ -138,5 +138,10 @@ namespace pc_market.Forms
             exSheet.Columns.AutoFit();
             exApp.Visible = true;
         }
+
+        private void btnDong_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -203,6 +203,12 @@
     <Compile Include="Forms\Form_HangSanXuat.Designer.cs">
       <DependentUpon>Form_HangSanXuat.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Form_HoaDonKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_HoaDonKhachHang.Designer.cs">
+      <DependentUpon>Form_HoaDonKhachHang.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Form_HoaDonNhap.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -220,6 +226,12 @@
     </Compile>
     <Compile Include="Forms\Form_Menu.Designer.cs">
       <DependentUpon>Form_Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_MenuKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_MenuKhachHang.Designer.cs">
+      <DependentUpon>Form_MenuKhachHang.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Form_Monitor.cs">
       <SubType>Form</SubType>
@@ -287,6 +299,12 @@
     <Compile Include="Forms\Form_SearchHDN.Designer.cs">
       <DependentUpon>Form_SearchHDN.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Form_MuaHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_MuaHang.Designer.cs">
+      <DependentUpon>Form_MuaHang.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\Form_AboutUs.resx">
@@ -313,6 +331,9 @@
     <EmbeddedResource Include="Forms\Form_HangSanXuat.resx">
       <DependentUpon>Form_HangSanXuat.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_HoaDonKhachHang.resx">
+      <DependentUpon>Form_HoaDonKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Form_HoaDonNhap.resx">
       <DependentUpon>Form_HoaDonNhap.cs</DependentUpon>
     </EmbeddedResource>
@@ -321,6 +342,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Form_Menu.resx">
       <DependentUpon>Form_Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_MenuKhachHang.resx">
+      <DependentUpon>Form_MenuKhachHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Form_Monitor.resx">
       <DependentUpon>Form_Monitor.cs</DependentUpon>
@@ -354,6 +378,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Form_SearchHDN.resx">
       <DependentUpon>Form_SearchHDN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_MuaHang.resx">
+      <DependentUpon>Form_MuaHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

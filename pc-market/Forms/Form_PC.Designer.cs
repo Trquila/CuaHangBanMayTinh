@@ -26,7 +26,7 @@ namespace pc_market.Forms {
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
-            this.label1 = new System.Windows.Forms.Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_PC));
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -71,27 +71,15 @@ namespace pc_market.Forms {
             this.button7 = new System.Windows.Forms.Button();
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
+            this.btnDong = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.label1.Location = new System.Drawing.Point(216, 9);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1142, 46);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "MÁY TÍNH ĐỂ BÀN (PC) - MÁY TÍNH XÁCH TAY (LAPTOP)";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(61, 114);
+            this.label2.Location = new System.Drawing.Point(41, 35);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(84, 26);
@@ -100,7 +88,7 @@ namespace pc_market.Forms {
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(184, 111);
+            this.textBox1.Location = new System.Drawing.Point(164, 32);
             this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(597, 22);
@@ -108,7 +96,7 @@ namespace pc_market.Forms {
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(184, 180);
+            this.textBox2.Location = new System.Drawing.Point(164, 79);
             this.textBox2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(597, 22);
@@ -117,7 +105,7 @@ namespace pc_market.Forms {
             // label3
             // 
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(61, 180);
+            this.label3.Location = new System.Drawing.Point(41, 79);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(115, 26);
@@ -127,7 +115,7 @@ namespace pc_market.Forms {
             // label4
             // 
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(61, 244);
+            this.label4.Location = new System.Drawing.Point(41, 126);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(115, 26);
@@ -138,7 +126,7 @@ namespace pc_market.Forms {
             // 
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(184, 244);
+            this.comboBox1.Location = new System.Drawing.Point(164, 126);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(597, 24);
@@ -149,7 +137,7 @@ namespace pc_market.Forms {
             // 
             this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(184, 304);
+            this.comboBox2.Location = new System.Drawing.Point(164, 174);
             this.comboBox2.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(597, 24);
@@ -158,7 +146,7 @@ namespace pc_market.Forms {
             // label5
             // 
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(61, 306);
+            this.label5.Location = new System.Drawing.Point(41, 176);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(115, 26);
@@ -169,7 +157,7 @@ namespace pc_market.Forms {
             // 
             this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(184, 374);
+            this.comboBox3.Location = new System.Drawing.Point(164, 219);
             this.comboBox3.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(597, 24);
@@ -178,7 +166,7 @@ namespace pc_market.Forms {
             // label6
             // 
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(61, 372);
+            this.label6.Location = new System.Drawing.Point(41, 217);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(115, 26);
@@ -189,7 +177,7 @@ namespace pc_market.Forms {
             // 
             this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(184, 438);
+            this.comboBox4.Location = new System.Drawing.Point(164, 266);
             this.comboBox4.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(597, 24);
@@ -198,7 +186,7 @@ namespace pc_market.Forms {
             // label7
             // 
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(61, 438);
+            this.label7.Location = new System.Drawing.Point(41, 266);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(115, 26);
@@ -209,7 +197,7 @@ namespace pc_market.Forms {
             // 
             this.comboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(184, 506);
+            this.comboBox5.Location = new System.Drawing.Point(164, 312);
             this.comboBox5.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox5.Name = "comboBox5";
             this.comboBox5.Size = new System.Drawing.Size(597, 24);
@@ -218,7 +206,7 @@ namespace pc_market.Forms {
             // label8
             // 
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(61, 508);
+            this.label8.Location = new System.Drawing.Point(41, 314);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(115, 26);
@@ -229,7 +217,7 @@ namespace pc_market.Forms {
             // 
             this.comboBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Location = new System.Drawing.Point(184, 578);
+            this.comboBox6.Location = new System.Drawing.Point(164, 358);
             this.comboBox6.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox6.Name = "comboBox6";
             this.comboBox6.Size = new System.Drawing.Size(597, 24);
@@ -238,7 +226,7 @@ namespace pc_market.Forms {
             // label9
             // 
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(61, 580);
+            this.label9.Location = new System.Drawing.Point(41, 360);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(115, 26);
@@ -249,7 +237,7 @@ namespace pc_market.Forms {
             // 
             this.comboBox7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.Location = new System.Drawing.Point(184, 651);
+            this.comboBox7.Location = new System.Drawing.Point(164, 407);
             this.comboBox7.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox7.Name = "comboBox7";
             this.comboBox7.Size = new System.Drawing.Size(597, 24);
@@ -258,7 +246,7 @@ namespace pc_market.Forms {
             // label10
             // 
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(61, 652);
+            this.label10.Location = new System.Drawing.Point(41, 408);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(115, 26);
@@ -269,7 +257,7 @@ namespace pc_market.Forms {
             // 
             this.comboBox8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox8.FormattingEnabled = true;
-            this.comboBox8.Location = new System.Drawing.Point(184, 722);
+            this.comboBox8.Location = new System.Drawing.Point(164, 455);
             this.comboBox8.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox8.Name = "comboBox8";
             this.comboBox8.Size = new System.Drawing.Size(597, 24);
@@ -278,7 +266,7 @@ namespace pc_market.Forms {
             // label11
             // 
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(61, 724);
+            this.label11.Location = new System.Drawing.Point(41, 457);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(115, 26);
@@ -288,13 +276,14 @@ namespace pc_market.Forms {
             // button5
             // 
             this.button5.BackColor = System.Drawing.Color.White;
-            this.button5.BackgroundImage = global::pc_market.Properties.Resources.skip;
             this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(1406, 1118);
+            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
+            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button5.Location = new System.Drawing.Point(723, 744);
             this.button5.Margin = new System.Windows.Forms.Padding(4);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(200, 49);
+            this.button5.Size = new System.Drawing.Size(127, 49);
             this.button5.TabIndex = 26;
             this.button5.Text = "Bỏ qua";
             this.button5.UseVisualStyleBackColor = false;
@@ -303,14 +292,15 @@ namespace pc_market.Forms {
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.White;
-            this.button4.BackgroundImage = global::pc_market.Properties.Resources.save;
             this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.Black;
-            this.button4.Location = new System.Drawing.Point(878, 1118);
+            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
+            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button4.Location = new System.Drawing.Point(453, 744);
             this.button4.Margin = new System.Windows.Forms.Padding(4);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(200, 49);
+            this.button4.Size = new System.Drawing.Size(127, 49);
             this.button4.TabIndex = 25;
             this.button4.Text = "Lưu";
             this.button4.UseVisualStyleBackColor = false;
@@ -318,13 +308,14 @@ namespace pc_market.Forms {
             // 
             // button3
             // 
-            this.button3.BackgroundImage = global::pc_market.Properties.Resources.delete;
             this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(596, 1118);
+            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.Location = new System.Drawing.Point(318, 744);
             this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(200, 49);
+            this.button3.Size = new System.Drawing.Size(127, 49);
             this.button3.TabIndex = 24;
             this.button3.Text = "Xóa";
             this.button3.UseVisualStyleBackColor = true;
@@ -332,13 +323,14 @@ namespace pc_market.Forms {
             // 
             // button2
             // 
-            this.button2.BackgroundImage = global::pc_market.Properties.Resources.edit;
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(326, 1118);
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(183, 744);
             this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(200, 49);
+            this.button2.Size = new System.Drawing.Size(127, 49);
             this.button2.TabIndex = 23;
             this.button2.Text = "Sửa";
             this.button2.UseVisualStyleBackColor = true;
@@ -346,13 +338,14 @@ namespace pc_market.Forms {
             // 
             // button1
             // 
-            this.button1.BackgroundImage = global::pc_market.Properties.Resources.add;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(61, 1118);
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(48, 744);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(200, 49);
+            this.button1.Size = new System.Drawing.Size(127, 49);
             this.button1.TabIndex = 22;
             this.button1.Text = "Thêm";
             this.button1.UseVisualStyleBackColor = true;
@@ -361,20 +354,20 @@ namespace pc_market.Forms {
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(61, 796);
+            this.dataGridView1.Location = new System.Drawing.Point(45, 497);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(1505, 284);
+            this.dataGridView1.Size = new System.Drawing.Size(1221, 229);
             this.dataGridView1.TabIndex = 27;
             this.dataGridView1.Click += new System.EventHandler(this.DataGridView_Click);
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(978, 107);
+            this.textBox3.Location = new System.Drawing.Point(908, 32);
             this.textBox3.Margin = new System.Windows.Forms.Padding(4);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(541, 22);
+            this.textBox3.Size = new System.Drawing.Size(329, 22);
             this.textBox3.TabIndex = 29;
             this.textBox3.TextChanged += new System.EventHandler(this.ImportPrice_TextChanged);
             this.textBox3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Validate_KeyPress);
@@ -382,7 +375,7 @@ namespace pc_market.Forms {
             // label12
             // 
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(884, 107);
+            this.label12.Location = new System.Drawing.Point(814, 32);
             this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(86, 26);
@@ -391,17 +384,17 @@ namespace pc_market.Forms {
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(978, 178);
+            this.textBox4.Location = new System.Drawing.Point(908, 75);
             this.textBox4.Margin = new System.Windows.Forms.Padding(4);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(541, 22);
+            this.textBox4.Size = new System.Drawing.Size(329, 22);
             this.textBox4.TabIndex = 31;
             this.textBox4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Validate_KeyPress);
             // 
             // label13
             // 
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(884, 178);
+            this.label13.Location = new System.Drawing.Point(814, 75);
             this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(86, 26);
@@ -410,17 +403,17 @@ namespace pc_market.Forms {
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(978, 244);
+            this.textBox5.Location = new System.Drawing.Point(908, 120);
             this.textBox5.Margin = new System.Windows.Forms.Padding(4);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(541, 22);
+            this.textBox5.Size = new System.Drawing.Size(329, 22);
             this.textBox5.TabIndex = 33;
             this.textBox5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Validate_KeyPress);
             // 
             // label14
             // 
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(884, 240);
+            this.label14.Location = new System.Drawing.Point(814, 116);
             this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(90, 26);
@@ -429,27 +422,27 @@ namespace pc_market.Forms {
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(978, 306);
+            this.textBox6.Location = new System.Drawing.Point(908, 166);
             this.textBox6.Margin = new System.Windows.Forms.Padding(4);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(541, 22);
+            this.textBox6.Size = new System.Drawing.Size(83, 22);
             this.textBox6.TabIndex = 35;
             this.textBox6.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Validate_KeyPress);
             // 
             // label15
             // 
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(884, 302);
+            this.label15.Location = new System.Drawing.Point(814, 166);
             this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(90, 26);
+            this.label15.Size = new System.Drawing.Size(86, 26);
             this.label15.TabIndex = 34;
             this.label15.Text = "Bảo hành:";
             // 
             // label16
             // 
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(884, 372);
+            this.label16.Location = new System.Drawing.Point(814, 207);
             this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(94, 26);
@@ -458,17 +451,17 @@ namespace pc_market.Forms {
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(978, 372);
+            this.richTextBox1.Location = new System.Drawing.Point(908, 207);
             this.richTextBox1.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(541, 93);
+            this.richTextBox1.Size = new System.Drawing.Size(329, 48);
             this.richTextBox1.TabIndex = 37;
             this.richTextBox1.Text = "";
             // 
             // label17
             // 
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(884, 506);
+            this.label17.Location = new System.Drawing.Point(811, 271);
             this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(96, 26);
@@ -479,17 +472,17 @@ namespace pc_market.Forms {
             // 
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Location = new System.Drawing.Point(978, 556);
+            this.pictureBox1.Location = new System.Drawing.Point(905, 315);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(541, 210);
+            this.pictureBox1.Size = new System.Drawing.Size(361, 174);
             this.pictureBox1.TabIndex = 39;
             this.pictureBox1.TabStop = false;
             // 
             // label18
             // 
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(1527, 303);
+            this.label18.Location = new System.Drawing.Point(999, 162);
             this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(55, 26);
@@ -500,7 +493,7 @@ namespace pc_market.Forms {
             // button6
             // 
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(888, 556);
+            this.button6.Location = new System.Drawing.Point(806, 315);
             this.button6.Margin = new System.Windows.Forms.Padding(4);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(79, 37);
@@ -511,24 +504,25 @@ namespace pc_market.Forms {
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(978, 506);
+            this.textBox7.Location = new System.Drawing.Point(905, 271);
             this.textBox7.Margin = new System.Windows.Forms.Padding(4);
             this.textBox7.Name = "textBox7";
             this.textBox7.ReadOnly = true;
-            this.textBox7.Size = new System.Drawing.Size(541, 22);
+            this.textBox7.Size = new System.Drawing.Size(361, 22);
             this.textBox7.TabIndex = 42;
             // 
             // button7
             // 
             this.button7.BackColor = System.Drawing.Color.White;
-            this.button7.BackgroundImage = global::pc_market.Properties.Resources.search;
             this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.ForeColor = System.Drawing.Color.Black;
-            this.button7.Location = new System.Drawing.Point(1146, 1118);
+            this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
+            this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button7.Location = new System.Drawing.Point(588, 744);
             this.button7.Margin = new System.Windows.Forms.Padding(4);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(200, 49);
+            this.button7.Size = new System.Drawing.Size(127, 49);
             this.button7.TabIndex = 43;
             this.button7.Text = "Tìm kiếm";
             this.button7.UseVisualStyleBackColor = false;
@@ -537,7 +531,7 @@ namespace pc_market.Forms {
             // label19
             // 
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(1527, 107);
+            this.label19.Location = new System.Drawing.Point(1245, 32);
             this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(55, 26);
@@ -548,7 +542,7 @@ namespace pc_market.Forms {
             // label20
             // 
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(1527, 175);
+            this.label20.Location = new System.Drawing.Point(1245, 71);
             this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(55, 26);
@@ -556,15 +550,29 @@ namespace pc_market.Forms {
             this.label20.Text = "VNĐ";
             this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // btnDong
+            // 
+            this.btnDong.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnDong.Image = ((System.Drawing.Image)(resources.GetObject("btnDong.Image")));
+            this.btnDong.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDong.Location = new System.Drawing.Point(1139, 744);
+            this.btnDong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnDong.Name = "btnDong";
+            this.btnDong.Size = new System.Drawing.Size(127, 49);
+            this.btnDong.TabIndex = 66;
+            this.btnDong.Text = "Đóng";
+            this.btnDong.UseVisualStyleBackColor = true;
+            this.btnDong.Click += new System.EventHandler(this.btnDong_Click);
+            // 
             // Form_PC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoScroll = true;
             this.AutoScrollMinSize = new System.Drawing.Size(1302, 1080);
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(1779, 1055);
+            this.ClientSize = new System.Drawing.Size(1299, 1055);
+            this.Controls.Add(this.btnDong);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.button7);
@@ -609,7 +617,6 @@ namespace pc_market.Forms {
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form_PC";
@@ -684,8 +691,8 @@ namespace pc_market.Forms {
 
         private System.Windows.Forms.Label label2;
 
-        private System.Windows.Forms.Label label1;
-
         #endregion
+
+        private System.Windows.Forms.Button btnDong;
     }
 }

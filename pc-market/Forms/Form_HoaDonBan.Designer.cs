@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent() {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_HoaDonBan));
-            this.label1 = new System.Windows.Forms.Label();
             this.txtMaHDBan = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -78,17 +77,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.DataGridViewChitiet)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label1.Location = new System.Drawing.Point(331, 30);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(444, 46);
-            this.label1.TabIndex = 23;
-            this.label1.Text = "HÓA ĐƠN BÁN HÀNG";
-            // 
             // txtMaHDBan
             // 
             this.txtMaHDBan.Location = new System.Drawing.Point(155, 26);
@@ -126,7 +114,7 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.txtMaHDBan);
-            this.groupBox1.Location = new System.Drawing.Point(103, 91);
+            this.groupBox1.Location = new System.Drawing.Point(103, 34);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -291,7 +279,7 @@
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.txtTenmayvt);
             this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Location = new System.Drawing.Point(103, 252);
+            this.groupBox2.Location = new System.Drawing.Point(103, 193);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -393,12 +381,12 @@
             // DataGridViewChitiet
             // 
             this.DataGridViewChitiet.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DataGridViewChitiet.Location = new System.Drawing.Point(103, 358);
+            this.DataGridViewChitiet.Location = new System.Drawing.Point(103, 299);
             this.DataGridViewChitiet.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.DataGridViewChitiet.Name = "DataGridViewChitiet";
             this.DataGridViewChitiet.RowHeadersWidth = 51;
             this.DataGridViewChitiet.RowTemplate.Height = 24;
-            this.DataGridViewChitiet.Size = new System.Drawing.Size(897, 166);
+            this.DataGridViewChitiet.Size = new System.Drawing.Size(897, 225);
             this.DataGridViewChitiet.TabIndex = 28;
             this.DataGridViewChitiet.DoubleClick += new System.EventHandler(this.DataGridViewChitiet_DoubleClick);
             // 
@@ -573,7 +561,6 @@
             this.Controls.Add(this.DataGridViewChitiet);
             this.Controls.Add(this.txtTongtien);
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -596,8 +583,6 @@
         private System.Windows.Forms.Label label13;
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label5;

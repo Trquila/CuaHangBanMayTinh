@@ -209,8 +209,9 @@
             // 
             // btnhienthids
             // 
-            this.btnhienthids.BackgroundImage = global::pc_market.Properties.Resources.display;
             this.btnhienthids.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnhienthids.Image = ((System.Drawing.Image)(resources.GetObject("btnhienthids.Image")));
+            this.btnhienthids.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnhienthids.Location = new System.Drawing.Point(1015, 554);
             this.btnhienthids.Margin = new System.Windows.Forms.Padding(4);
             this.btnhienthids.Name = "btnhienthids";
@@ -236,8 +237,9 @@
             // 
             // btnthoat
             // 
-            this.btnthoat.BackgroundImage = global::pc_market.Properties.Resources.close;
             this.btnthoat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnthoat.Image = ((System.Drawing.Image)(resources.GetObject("btnthoat.Image")));
+            this.btnthoat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnthoat.Location = new System.Drawing.Point(1171, 554);
             this.btnthoat.Margin = new System.Windows.Forms.Padding(4);
             this.btnthoat.Name = "btnthoat";

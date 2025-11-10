@@ -55,7 +55,7 @@
             this.btnDong.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnDong.Image = ((System.Drawing.Image)(resources.GetObject("btnDong.Image")));
             this.btnDong.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDong.Location = new System.Drawing.Point(580, 446);
+            this.btnDong.Location = new System.Drawing.Point(788, 446);
             this.btnDong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDong.Name = "btnDong";
             this.btnDong.Size = new System.Drawing.Size(107, 46);
@@ -67,7 +67,7 @@
             // btnTimlai
             // 
             this.btnTimlai.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnTimlai.Location = new System.Drawing.Point(468, 446);
+            this.btnTimlai.Location = new System.Drawing.Point(594, 446);
             this.btnTimlai.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnTimlai.Name = "btnTimlai";
             this.btnTimlai.Size = new System.Drawing.Size(107, 46);
@@ -81,7 +81,7 @@
             this.btnTimkiem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnTimkiem.Image = ((System.Drawing.Image)(resources.GetObject("btnTimkiem.Image")));
             this.btnTimkiem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTimkiem.Location = new System.Drawing.Point(351, 446);
+            this.btnTimkiem.Location = new System.Drawing.Point(384, 446);
             this.btnTimkiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnTimkiem.Name = "btnTimkiem";
             this.btnTimkiem.Size = new System.Drawing.Size(112, 46);
@@ -221,7 +221,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(231, 25);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(506, 46);

@@ -197,5 +197,10 @@ namespace pc_market.Forms {
             button5.Enabled = false;
             textBox1.Enabled = false;
         }
+
+        private void btnDong_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -701,5 +701,10 @@ namespace pc_market.Forms
             else
                 e.Handled = true;
         }
+
+        private void btnDong_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

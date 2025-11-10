@@ -117,5 +117,10 @@ namespace pc_market.Forms {
             excelSheet.Columns.AutoFit();
             excelApp.Visible = true;
         }
+
+        private void btnDong_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

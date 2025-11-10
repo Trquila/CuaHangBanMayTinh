@@ -27,6 +27,7 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_GPU));
             this.btnDong = new System.Windows.Forms.Button();
             this.btnHienthids = new System.Windows.Forms.Button();
             this.btnTimkiem = new System.Windows.Forms.Button();
@@ -40,7 +41,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txtMagpu = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtMota = new System.Windows.Forms.RichTextBox();
             this.cboMahsx = new System.Windows.Forms.ComboBox();
@@ -56,8 +56,9 @@
             // 
             // btnDong
             // 
-            this.btnDong.BackgroundImage = global::pc_market.Properties.Resources.close;
             this.btnDong.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnDong.Image = ((System.Drawing.Image)(resources.GetObject("btnDong.Image")));
+            this.btnDong.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDong.Location = new System.Drawing.Point(905, 524);
             this.btnDong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDong.Name = "btnDong";
@@ -69,12 +70,13 @@
             // 
             // btnHienthids
             // 
-            this.btnHienthids.BackgroundImage = global::pc_market.Properties.Resources.display;
             this.btnHienthids.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnHienthids.Location = new System.Drawing.Point(677, 524);
+            this.btnHienthids.Image = ((System.Drawing.Image)(resources.GetObject("btnHienthids.Image")));
+            this.btnHienthids.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHienthids.Location = new System.Drawing.Point(698, 524);
             this.btnHienthids.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnHienthids.Name = "btnHienthids";
-            this.btnHienthids.Size = new System.Drawing.Size(100, 46);
+            this.btnHienthids.Size = new System.Drawing.Size(119, 46);
             this.btnHienthids.TabIndex = 37;
             this.btnHienthids.Text = "Hiển thị DS";
             this.btnHienthids.UseVisualStyleBackColor = true;
@@ -82,12 +84,13 @@
             // 
             // btnTimkiem
             // 
-            this.btnTimkiem.BackgroundImage = global::pc_market.Properties.Resources.search;
             this.btnTimkiem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnTimkiem.Image = ((System.Drawing.Image)(resources.GetObject("btnTimkiem.Image")));
+            this.btnTimkiem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTimkiem.Location = new System.Drawing.Point(581, 524);
             this.btnTimkiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnTimkiem.Name = "btnTimkiem";
-            this.btnTimkiem.Size = new System.Drawing.Size(91, 46);
+            this.btnTimkiem.Size = new System.Drawing.Size(111, 46);
             this.btnTimkiem.TabIndex = 36;
             this.btnTimkiem.Text = "Tìm kiếm";
             this.btnTimkiem.UseVisualStyleBackColor = true;
@@ -95,8 +98,9 @@
             // 
             // btnBoqua
             // 
-            this.btnBoqua.BackgroundImage = global::pc_market.Properties.Resources.skip;
             this.btnBoqua.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnBoqua.Image = ((System.Drawing.Image)(resources.GetObject("btnBoqua.Image")));
+            this.btnBoqua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBoqua.Location = new System.Drawing.Point(485, 524);
             this.btnBoqua.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBoqua.Name = "btnBoqua";
@@ -108,8 +112,9 @@
             // 
             // btnLuu
             // 
-            this.btnLuu.BackgroundImage = global::pc_market.Properties.Resources.save;
             this.btnLuu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnLuu.Image = ((System.Drawing.Image)(resources.GetObject("btnLuu.Image")));
+            this.btnLuu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnLuu.Location = new System.Drawing.Point(389, 524);
             this.btnLuu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLuu.Name = "btnLuu";
@@ -121,8 +126,9 @@
             // 
             // btnSua
             // 
-            this.btnSua.BackgroundImage = global::pc_market.Properties.Resources.edit;
             this.btnSua.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnSua.Image = ((System.Drawing.Image)(resources.GetObject("btnSua.Image")));
+            this.btnSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSua.Location = new System.Drawing.Point(293, 524);
             this.btnSua.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSua.Name = "btnSua";
@@ -134,8 +140,9 @@
             // 
             // btnXoa
             // 
-            this.btnXoa.BackgroundImage = global::pc_market.Properties.Resources.delete;
             this.btnXoa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnXoa.Image = ((System.Drawing.Image)(resources.GetObject("btnXoa.Image")));
+            this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnXoa.Location = new System.Drawing.Point(197, 524);
             this.btnXoa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnXoa.Name = "btnXoa";
@@ -147,8 +154,9 @@
             // 
             // btnThem
             // 
-            this.btnThem.BackgroundImage = global::pc_market.Properties.Resources.add;
             this.btnThem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnThem.Image = ((System.Drawing.Image)(resources.GetObject("btnThem.Image")));
+            this.btnThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnThem.Location = new System.Drawing.Point(101, 524);
             this.btnThem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThem.Name = "btnThem";
@@ -161,12 +169,12 @@
             // dgridGPU
             // 
             this.dgridGPU.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgridGPU.Location = new System.Drawing.Point(101, 267);
+            this.dgridGPU.Location = new System.Drawing.Point(101, 227);
             this.dgridGPU.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgridGPU.Name = "dgridGPU";
             this.dgridGPU.RowHeadersWidth = 51;
             this.dgridGPU.RowTemplate.Height = 24;
-            this.dgridGPU.Size = new System.Drawing.Size(895, 235);
+            this.dgridGPU.Size = new System.Drawing.Size(895, 275);
             this.dgridGPU.TabIndex = 30;
             this.dgridGPU.Click += new System.EventHandler(this.dgridGPU_Click);
             // 
@@ -204,17 +212,6 @@
             this.label2.TabIndex = 23;
             this.label2.Text = "Mã GPU";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.label1.Location = new System.Drawing.Point(320, 26);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(442, 46);
-            this.label1.TabIndex = 22;
-            this.label1.Text = "CARD ĐỒ HỌA - GPU";
-            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.txtMota);
@@ -229,11 +226,11 @@
             this.groupBox1.Controls.Add(this.txtMagpu);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Location = new System.Drawing.Point(101, 85);
+            this.groupBox1.Location = new System.Drawing.Point(101, 23);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(895, 156);
+            this.groupBox1.Size = new System.Drawing.Size(895, 183);
             this.groupBox1.TabIndex = 41;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin chung";
@@ -322,7 +319,6 @@
             this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.btnThem);
             this.Controls.Add(this.dgridGPU);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -335,7 +331,6 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -354,7 +349,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtMagpu;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label6;

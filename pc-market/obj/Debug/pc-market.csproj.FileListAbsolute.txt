@@ -197,7 +197,6 @@ C:\PC Market\pc-market\obj\Debug\pc-market.csproj.Up2Date
 C:\PC Market\pc-market\obj\Debug\pc_market.exe
 C:\PC Market\pc-market\obj\Debug\pc_market.pdb
 C:\CuaHangBanMayTinh\pc-market\obj\Debug\pc-market.csproj.AssemblyReference.cache
-C:\CuaHangBanMayTinh\pc-market\obj\Debug\pc-market.csproj.SuggestedBindingRedirects.cache
 C:\CuaHangBanMayTinh\pc-market\obj\Debug\pc_market.exe.config
 C:\CuaHangBanMayTinh\pc-market\obj\Debug\pc_market.Forms.Form_DoanhThu.resources
 C:\CuaHangBanMayTinh\pc-market\obj\Debug\pc_market.Forms.Form_BaoCaoBan.resources
@@ -211,7 +210,6 @@ C:\CuaHangBanMayTinh\pc-market\obj\Debug\pc_market.Forms.Form_Monitor.resources
 C:\CuaHangBanMayTinh\pc-market\obj\Debug\pc_market.Forms.Form_NhanVien.resources
 C:\CuaHangBanMayTinh\pc-market\obj\Debug\pc_market.Forms.Form_RAM.resources
 C:\CuaHangBanMayTinh\pc-market\obj\Debug\pc_market.Forms.Form_Login.resources
-C:\CuaHangBanMayTinh\pc-market\obj\Debug\pc_market.Form_MainMenu.resources
 C:\CuaHangBanMayTinh\pc-market\obj\Debug\pc_market.Forms.Form_Mainboard.resources
 C:\CuaHangBanMayTinh\pc-market\obj\Debug\pc_market.Forms.Form_PC.resources
 C:\CuaHangBanMayTinh\pc-market\obj\Debug\pc_market.Forms.Form_GPU.resources
@@ -313,3 +311,11 @@ C:\pc-market\bin\Debug\System.Security.Cryptography.Xml.xml
 C:\pc-market\obj\Debug\pc_market.Forms.Form_Menu.resources
 C:\pc-market\obj\Debug\pc_market.Forms.Form_AboutUs.resources
 C:\pc-market\obj\Debug\pc_market.Forms.Form_Exit.resources
+C:\CuaHangBanMayTinh\pc-market\bin\Debug\ReaLTaiizor.dll
+C:\CuaHangBanMayTinh\pc-market\bin\Debug\ReaLTaiizor.xml
+C:\CuaHangBanMayTinh\pc-market\obj\Debug\pc_market.Forms.Form_AboutUs.resources
+C:\CuaHangBanMayTinh\pc-market\obj\Debug\pc_market.Forms.Form_Exit.resources
+C:\CuaHangBanMayTinh\pc-market\obj\Debug\pc_market.Forms.Form_Menu.resources
+C:\CuaHangBanMayTinh\pc-market\obj\Debug\pc_market.Forms.Form_MenuKhachHang.resources
+C:\CuaHangBanMayTinh\pc-market\obj\Debug\pc_market.Forms.Form_MuaHang.resources
+C:\CuaHangBanMayTinh\pc-market\obj\Debug\pc_market.Forms.Form_HoaDonKhachHang.resources
