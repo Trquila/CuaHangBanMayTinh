@@ -15,6 +15,7 @@ namespace pc_market.Forms {
     public partial class Form_KhachHang : Form {
         public Form_KhachHang() {
             InitializeComponent();
+
         }
 
         private void FormKhachhang_Load(object sender, EventArgs e) {

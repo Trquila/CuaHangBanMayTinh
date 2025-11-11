@@ -28,20 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_MenuKhachHang));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.nightControlBox1 = new ReaLTaiizor.Controls.NightControlBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.sidebar = new System.Windows.Forms.FlowLayoutPanel();
             this.button23 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button21 = new System.Windows.Forms.Button();
             this.button24 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.timerSidebar = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
-            this.sidebar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.sidebar.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -101,6 +103,17 @@
             this.label1.TabIndex = 10;
             this.label1.Text = "PC Market ||";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(11, 5);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(38, 32);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // sidebar
             // 
             this.sidebar.BackColor = System.Drawing.Color.Black;
@@ -113,7 +126,7 @@
             this.sidebar.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.sidebar.Location = new System.Drawing.Point(0, 43);
             this.sidebar.Name = "sidebar";
-            this.sidebar.Size = new System.Drawing.Size(313, 635);
+            this.sidebar.Size = new System.Drawing.Size(30, 635);
             this.sidebar.TabIndex = 11;
             // 
             // button23
@@ -136,8 +149,9 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(180, 30);
             this.button4.TabIndex = 0;
-            this.button4.Text = "Hóa đơn mua hàng";
+            this.button4.Text = "     Hóa đơn mua hàng";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button21
             // 
@@ -150,6 +164,7 @@
             this.button21.TabIndex = 11;
             this.button21.Text = "Về chúng tôi";
             this.button21.UseVisualStyleBackColor = true;
+            this.button21.Click += new System.EventHandler(this.button21_Click);
             // 
             // button24
             // 
@@ -162,16 +177,12 @@
             this.button24.TabIndex = 12;
             this.button24.Text = "Thoát";
             this.button24.UseVisualStyleBackColor = true;
+            this.button24.Click += new System.EventHandler(this.button24_Click);
             // 
-            // pictureBox1
+            // timerSidebar
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(11, 5);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(38, 32);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 10;
-            this.pictureBox1.TabStop = false;
+            this.timerSidebar.Interval = 10;
+            this.timerSidebar.Tick += new System.EventHandler(this.timerSidebar_Tick);
             // 
             // Form_MenuKhachHang
             // 
@@ -185,8 +196,8 @@
             this.Text = "Form_MenuKhachHang";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.sidebar.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.sidebar.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -203,5 +214,6 @@
         private System.Windows.Forms.Button button24;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button23;
+        private System.Windows.Forms.Timer timerSidebar;
     }
 }
